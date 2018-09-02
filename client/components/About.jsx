@@ -2,8 +2,8 @@ import React from 'react'
 
 function About () {
   return (
-    <div className='rank-listing'>
-      <h2>Do you wish you had your own fashion stylist? </h2>
+    <div className='about'>
+          <h1>Do you wish you had your own fashion stylist? </h1>
         <p>
             Do you wish you had your own fashion stylist?
         </p>
