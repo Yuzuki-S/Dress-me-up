@@ -1,11 +1,11 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
-
 import Home from './Home'
 import Nav from './Nav'
-import RankListing from './RankListing'
-import Rank from './Rank'
-import Species from './Species'
+import About from './About'
+import Contact from './Contact'
+import Login from './Login'
+import Signup from './Signup'
 
 const App = () => {
   return (
@@ -15,14 +15,15 @@ const App = () => {
           <Route path='/' component={Nav} />
           <div className='content'>
             <Route exact path='/' component={Home} />
-            <Route path='/list/:rank' component={RankListing} />
-            <Route path='/rank/:rank/:name' component={Rank} />
-            <Route path='/species/:id' component={Species} />
+            <Route path='/About' component={About} />
+            <Route path='/Home' component={Home} />
+            <Route path='/Contact' component={Contact} />
+            <Route path='/Login' component={Login} />
+            <Route path='/Signup' component={Signup} />
           </div>
         </div>
       </div>
     </Router>
   )
 }
-
 export default App

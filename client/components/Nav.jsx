@@ -1,20 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-import {capitalize} from '../utilities'
-import ranks from '../../data/ranks'
-
-const rankList = Object.keys(ranks)
-
-const Nav = ({location}) => {
+const Nav = () => {
   return (
     <div className='nav'>
       <ul>
-        {rankList.map((rankName, key) => {
-          const normal = <li key={key}><Link to={`/list/${rankName}`}>{capitalize(rankName)}</Link></li>
-          const selected = <li key={key}><strong><Link to={`/list/${rankName}`}>{capitalize(rankName)}</Link></strong></li>
-          return location.pathname.indexOf(rankName) > 0 ? selected : normal
-        })}
+        <li><Link to='/Home'>Home</Link></li>
+        <li><Link to='/About'>About</Link></li>
+        <li><Link to='/Contact'>Contact</Link></li>
+        <li><Link to='/Login'>Login</Link></li>
+        <li><Link to='/Signup'>Sign up</Link></li>
       </ul>
     </div>
   )
