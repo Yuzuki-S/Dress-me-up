@@ -1,18 +1,19 @@
 import React from 'react'
 import {ButtonToolbar, Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
     <div className='container'>
-      <h1 className="cover-heading">My Fashion Box</h1>
+      <h1 className="cover-heading">Dress Me Up</h1>
       </div>
       <ButtonToolbar>
       <Button id= "button" bsStyle="primary" bsSize="large">
-     Learn more
+        <Link id = "list" to = "/About">Learn more</Link>
       </Button>
       <Button id= "button2" bsStyle="primary" bsSize="large">
-     Dress me up
+      <Link id = "list" to = "/Package">Dress me up </Link>
       </Button>
       </ButtonToolbar>
     </div>

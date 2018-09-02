@@ -27521,6 +27521,10 @@ var _Signup = __webpack_require__(356);
 
 var _Signup2 = _interopRequireDefault(_Signup);
 
+var _Package = __webpack_require__(357);
+
+var _Package2 = _interopRequireDefault(_Package);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
@@ -27542,7 +27546,8 @@ var App = function App() {
           _react2.default.createElement(_reactRouterDom.Route, { path: '/Home', component: _Home2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/Contact', component: _Contact2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/Login', component: _Login2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/Signup', component: _Signup2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/Signup', component: _Signup2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Package', component: _Package2.default })
         )
       )
     )
@@ -31213,6 +31218,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(199);
 
+var _reactRouterDom = __webpack_require__(102);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
@@ -31225,7 +31232,7 @@ var Home = function Home() {
       _react2.default.createElement(
         'h1',
         { className: 'cover-heading' },
-        'My Fashion Box'
+        'Dress Me Up'
       )
     ),
     _react2.default.createElement(
@@ -31234,12 +31241,20 @@ var Home = function Home() {
       _react2.default.createElement(
         _reactBootstrap.Button,
         { id: 'button', bsStyle: 'primary', bsSize: 'large' },
-        'Learn more'
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { id: 'list', to: '/About' },
+          'Learn more'
+        )
       ),
       _react2.default.createElement(
         _reactBootstrap.Button,
         { id: 'button2', bsStyle: 'primary', bsSize: 'large' },
-        'Dress me up'
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { id: 'list', to: '/Package' },
+          'Dress me up '
+        )
       )
     )
   );
@@ -44509,16 +44524,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function About() {
   return _react2.default.createElement(
     'div',
-    { className: 'about' },
+    { className: 'box' },
     _react2.default.createElement(
       'h1',
       null,
       'Do you wish you had your own fashion stylist? '
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'Do you wish you had your own fashion stylist?'
     ),
     _react2.default.createElement(
       'p',
@@ -44605,7 +44615,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Contact() {
   return _react2.default.createElement(
     'div',
-    { className: 'rank-listing' },
+    { className: 'box' },
     _react2.default.createElement(
       'h1',
       null,
@@ -44636,7 +44646,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Login() {
   return _react2.default.createElement(
     'div',
-    { className: 'rank-listing' },
+    { className: 'box' },
     _react2.default.createElement(
       'h2',
       null,
@@ -44667,7 +44677,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Signup() {
   return _react2.default.createElement(
     'div',
-    { className: 'rank-listing' },
+    { className: 'box' },
     _react2.default.createElement(
       'h2',
       null,
@@ -44677,6 +44687,37 @@ function Signup() {
 }
 
 exports.default = Signup;
+
+/***/ }),
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Package() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'box' },
+    _react2.default.createElement(
+      'h1',
+      null,
+      'Package'
+    )
+  );
+}
+
+exports.default = Package;
 
 /***/ })
 /******/ ]);

@@ -6,6 +6,7 @@ import About from './About'
 import Contact from './Contact'
 import Login from './Login'
 import Signup from './Signup'
+import Package from './Package'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path='/Contact' component={Contact} />
             <Route path='/Login' component={Login} />
             <Route path='/Signup' component={Signup} />
+            <Route exact path='/Package' component={Package} />
           </div>
         </div>
       </div>

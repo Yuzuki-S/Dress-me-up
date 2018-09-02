@@ -2,11 +2,9 @@ import React from 'react'
 
 function About () {
   return (
-    <div className='about'>
+    <div className='box'>
           <h1>Do you wish you had your own fashion stylist? </h1>
-        <p>
-            Do you wish you had your own fashion stylist?
-        </p>
+
         <p>
             Select your preferred package and receive a box of personally selected clothing periodically to keep your wardrobe fresh. 
         </p>

@@ -44,7 +44,7 @@ body {
 }
 
 #button {
-margin-left: 30%;
+margin-left: 25%;
 margin-right: 2%;
 
 }
@@ -58,10 +58,10 @@ li {
   color: aliceblue;
 }
 
-.about {
+.box {
   color: whitesmoke;
   font-size: 1.3em;
-  background-color: rgba(83, 166, 240, 0.8);
+  background-color: rgba(147, 176, 201, 0.8);
   padding-left: 20px;
   padding-bottom: 20px;
   border: 1px solid black;
