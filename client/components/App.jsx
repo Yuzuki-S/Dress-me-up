@@ -11,9 +11,9 @@ const App = () => {
   return (
     <Router>
       <div className='app'>
-        <div className='container'>
+        <div>
           <Route path='/' component={Nav} />
-          <div className='content'>
+          <div className='container'>
             <Route exact path='/' component={Home} />
             <Route path='/About' component={About} />
             <Route path='/Home' component={Home} />
