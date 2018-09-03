@@ -8,6 +8,8 @@ import Login from './Login'
 import Signup from './Signup'
 import Package from './Package'
 import Sports from './Sports'
+import Work from './Work'
+import Casual from './Casual'
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
             <Route path='/Signup' component={Signup} />
             <Route exact path='/Package' component={Package} />
             <Route exact path='/Package/sports' component={Sports} />
+            <Route exact path='/Package/casual' component={Casual} />
+            <Route exact path='/Package/work' component={Work} />
           </div>
           </div>
         </div>

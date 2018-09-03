@@ -23,7 +23,7 @@ function Package () {
         <h3>Casual Package</h3>
         <p>Look sexy and free - only $80/month</p>
         <p>
-          <Button bsStyle="primary">Buy Now</Button>
+          <Button href="#/Package/casual" bsStyle="primary">Buy Now</Button>
           &nbsp;
           <Button bsStyle="default">More Info</Button>
         </p>
@@ -34,7 +34,7 @@ function Package () {
         <h3>Work Package</h3>
         <p>Get that promotion today - only $120/month</p>
         <p>
-          <Button bsStyle="primary">Buy Now</Button>
+          <Button href="#/Package/work" bsStyle="primary">Buy Now</Button>
           &nbsp;
           <Button bsStyle="default">More Info</Button>
         </p>
