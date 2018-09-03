@@ -12,7 +12,7 @@ function Package () {
         <h3>Sports Package</h3>
         <p>Bring home the victory today! - $75/month</p>
         <p>
-          <Button bsStyle="primary">Buy Now</Button>
+          <Button href="#/Package/sports" bsStyle="primary" >Buy Now</Button>
           &nbsp;
           <Button bsStyle="default">More Info</Button>
         </p>

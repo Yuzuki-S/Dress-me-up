@@ -7,11 +7,13 @@ import Contact from './Contact'
 import Login from './Login'
 import Signup from './Signup'
 import Package from './Package'
+import Sports from './Sports'
 
 const App = () => {
   return (
     <Router>
       <div className='app'>
+      
       <div id="floaty" class="row">
         <div class="col-sm-4">
           <Route path='/' component={Nav} />
@@ -23,6 +25,7 @@ const App = () => {
             <Route path='/Login' component={Login} />
             <Route path='/Signup' component={Signup} />
             <Route exact path='/Package' component={Package} />
+            <Route exact path='/Package/sports' component={Sports} />
           </div>
           </div>
         </div>
