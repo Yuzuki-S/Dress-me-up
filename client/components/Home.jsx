@@ -13,7 +13,7 @@ const Home = () => {
       <Button id= "button" bsStyle="primary" bsSize="large">
         <Link id = "list" to = "/About">Learn more</Link>
       </Button>
-      <Button id= "button2" bsStyle="primary" bsSize="large">
+      <Button id= "button2" bsStyle="primary" bsSize="large" >
       <Link id = "list" to = "/Package">Dress me up </Link>
       </Button>
       </ButtonToolbar></div>
