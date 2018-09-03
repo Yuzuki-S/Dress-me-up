@@ -12,9 +12,10 @@ const App = () => {
   return (
     <Router>
       <div className='app'>
-        <div>
+      <div id="floaty" class="row">
+        <div class="col-sm-4">
           <Route path='/' component={Nav} />
-          <div className='container'>
+          <div id="bodyThing"className='col-lg-8'>
             <Route exact path='/' component={Home} />
             <Route path='/About' component={About} />
             <Route path='/Home' component={Home} />
@@ -22,6 +23,7 @@ const App = () => {
             <Route path='/Login' component={Login} />
             <Route path='/Signup' component={Signup} />
             <Route exact path='/Package' component={Package} />
+          </div>
           </div>
         </div>
       </div>

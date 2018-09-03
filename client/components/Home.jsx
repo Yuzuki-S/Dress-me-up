@@ -8,6 +8,7 @@ const Home = () => {
     <div className='container'>
       <h1 className="cover-heading">Dress Me Up</h1>
       </div>
+      <div id="buttonsMain">
       <ButtonToolbar>
       <Button id= "button" bsStyle="primary" bsSize="large">
         <Link id = "list" to = "/About">Learn more</Link>
@@ -15,7 +16,7 @@ const Home = () => {
       <Button id= "button2" bsStyle="primary" bsSize="large">
       <Link id = "list" to = "/Package">Dress me up </Link>
       </Button>
-      </ButtonToolbar>
+      </ButtonToolbar></div>
     </div>
   )
 }
