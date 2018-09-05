@@ -71,6 +71,7 @@ li {
   min-width: 1200px;
   padding-right: 20px;
   font-family: 'Permanent Marker', cursive;
+  min-height: 800px;
 }
 
 p {
@@ -109,4 +110,12 @@ p {
   padding-top: 30px;
 }
 
+#carousel {
+  max-width: 300px;
+  display: flex;
+  float: left;
+  margin-left: 30px;
+  padding-top: 30px;
+  
+}
 

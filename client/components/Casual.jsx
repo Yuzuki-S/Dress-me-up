@@ -1,31 +1,82 @@
 import React from 'react'
-import {Grid, Row, Col, Thumbnail} from 'react-bootstrap'
+import {Grid, Row, Col, Thumbnail,
+  Carousel
+  
+  
+  } from 'react-bootstrap'
 
 function Casual () {
   return (
+    <div>
     <div className='box'>
-      <h1>Casual</h1>
-      <Grid>
-  <Row>
-    <Col xs={6} md={4}>
-      <Thumbnail href="#" alt="171x180" src="/rib.jpg" />
-    </Col>
-    <Col xs={6} md={4}>
-      <Thumbnail   href="#" alt="171x180" src="/noir.jpg" />
-    </Col>
-    <Col xs={6} md={4}>
-      <Thumbnail   href="#" alt="171x180" src="/jeans.jpg" />
-    </Col>
-    <Col xs={6} md={4}>
-      <Thumbnail   href="#" alt="171x180" src="/anya.jpg" />
-    </Col>
-    <Col md={8}>
-    <div><p>Description here</p></div>
-    </Col>
-  </Row>
-</Grid>
+      <h1>Casual Package</h1>
+      <div id="carousel">
+<Carousel interval={null}>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/rib.jpg" />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/trim.jpg" />
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/textured.jpg" />
+
+  </Carousel.Item>
+
+</Carousel>
+    </div>
+
+<div id="carousel">
+<Carousel interval={null}>
+<Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/noir.jpg" />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/black.jpg" />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/woven.jpg" />
+  </Carousel.Item>
+</Carousel>
+
+    </div>
+    <div id="carousel">
+<Carousel interval={null}>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/jeans.jpg" />
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/drawcord.jpg" />
+  </Carousel.Item>
+</Carousel>
+
+    </div>
+
+
+<div id="carousel">
+<Carousel interval={null}>
+  <Carousel.Item>
+    <img width={360} height={425} alt="360x425" src="/anya.jpg" />
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img  id="yuz" width={360} height={425} alt="360x425" src="/jusmin.jpg" />
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img  id="yuz" width={360} height={425} alt="360x425" src="/malia.jpg" />
+
+  </Carousel.Item>
+
+</Carousel>
+    </div>
+    <button>Save</button>
+    </div>
     </div>
   )
 }
+
 
 export default Casual
