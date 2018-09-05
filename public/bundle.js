@@ -44866,6 +44866,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactBootstrap = __webpack_require__(72);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Sports() {
@@ -44875,7 +44877,48 @@ function Sports() {
     _react2.default.createElement(
       'h1',
       null,
-      'Sports'
+      'Sporty Package'
+    ),
+    _react2.default.createElement(
+      _reactBootstrap.Grid,
+      null,
+      _react2.default.createElement(
+        _reactBootstrap.Row,
+        null,
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/puffer.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/linen.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/jersey.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/leon.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { md: 8 },
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'p',
+              null,
+              'Description here'
+            )
+          )
+        )
+      )
     )
   );
 }
@@ -44908,7 +44951,7 @@ function Work() {
     _react2.default.createElement(
       'h1',
       null,
-      'Work'
+      'Work Package'
     ),
     _react2.default.createElement(
       _reactBootstrap.Grid,
@@ -44918,18 +44961,36 @@ function Work() {
         null,
         _react2.default.createElement(
           _reactBootstrap.Col,
-          { xs: 6, md: 3 },
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/blue-top.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/shirts.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
           _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/slim-cropped-pants.jpg' })
         ),
         _react2.default.createElement(
           _reactBootstrap.Col,
-          { xs: 6, md: 3 },
-          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/slim-cropped-pants.jpg' })
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/adele.jpg' })
         ),
         _react2.default.createElement(
           _reactBootstrap.Col,
-          { xs: 6, md: 3 },
-          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/slim-cropped-pants.jpg' })
+          { md: 8 },
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'p',
+              null,
+              'Description here'
+            )
+          )
         )
       )
     )
@@ -44953,6 +45014,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactBootstrap = __webpack_require__(72);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Casual() {
@@ -44963,6 +45026,47 @@ function Casual() {
       'h1',
       null,
       'Casual'
+    ),
+    _react2.default.createElement(
+      _reactBootstrap.Grid,
+      null,
+      _react2.default.createElement(
+        _reactBootstrap.Row,
+        null,
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/rib.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/noir.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/jeans.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { xs: 6, md: 4 },
+          _react2.default.createElement(_reactBootstrap.Thumbnail, { href: '#', alt: '171x180', src: '/anya.jpg' })
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Col,
+          { md: 8 },
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'p',
+              null,
+              'Description here'
+            )
+          )
+        )
+      )
     )
   );
 }
