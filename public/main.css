@@ -118,4 +118,9 @@ p {
   padding-top: 30px;
   
 }
-
+.carousel.slide {
+  max-width: 72%;
+}
+.carousel-inner {
+  max-width: 100%;
+}
