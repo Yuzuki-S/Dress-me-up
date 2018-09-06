@@ -1,9 +1,6 @@
 import React from 'react'
 import {Grid, Row, Col, Thumbnail,
-  Carousel
-  
-  
-  } from 'react-bootstrap'
+  Carousel} from 'react-bootstrap'
 
 function Casual () {
   return (
