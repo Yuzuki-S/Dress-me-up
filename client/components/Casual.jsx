@@ -4,8 +4,23 @@ import {Grid, Row, Col, Thumbnail,
   
   
   } from 'react-bootstrap'
+  class Casual extends React.Component {
+    constructor(props){
+      super(props)
+  
+      this.state={
+  
+      }
+      this.getItem = this.getItem.bind(this)
+      console.log(props);
+    }
 
-function Casual () {
+    getItem(e) {
+      console.log(e.target.id);
+      
+    }
+  
+  render(){
   return (
     <div>
     <div className='box'>
@@ -13,14 +28,14 @@ function Casual () {
       <div id="carousel">
 <Carousel interval={null}>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/rib.jpg" />
+    <img id="1" onClick={this.getItem} width={360} height={425} alt="360x425" src="/rib.jpg" />
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/trim.jpg" />
+    <img id="2" onClick={this.getItem} width={360} height={425} alt="360x425" src="/trim.jpg" />
 
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/textured.jpg" />
+    <img id="3" onClick={this.getItem} width={360} height={425} alt="360x425" src="/textured.jpg" />
 
   </Carousel.Item>
 
@@ -76,6 +91,8 @@ function Casual () {
     </div>
     </div>
   )
+
+}
 }
 
 
