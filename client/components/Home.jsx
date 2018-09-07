@@ -10,12 +10,18 @@ const Home = () => {
       </div>
       <div id="buttonsMain">
         <ButtonToolbar>
-          <Button id= "button" bsStyle="primary" bsSize="large">
-            <Link id = "list" to = "/About">Learn more</Link>
-          </Button>
-          <Button id= "button2" bsStyle="primary" bsSize="large" >
-            <Link id = "list" to = "/Package">Order now</Link>
-          </Button>
+          <Link id = "list" to = "/About">
+            <Button id= "button" bsStyle="primary" bsSize="large">
+              Learn more
+            </Button>
+          </Link>
+          
+          <Link id = "list" to = "/Package">
+            <Button id= "button2" bsStyle="primary" bsSize="large">
+              Order now
+            </Button>
+          </Link>
+          
         </ButtonToolbar>
       </div>
     </div>

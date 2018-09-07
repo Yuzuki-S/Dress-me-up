@@ -7,12 +7,13 @@ import {Navbar, NavDropdown, Nav, NavItem,MenuItem } from 'react-bootstrap'
 const Navy = () => {
   return (
 
-      <Navbar>
-        <Nav pullRight>
+      <Navbar inverse  >
+        <Nav>
         <Navbar.Header>
           <Navbar.Brand>
           <Link to='/Home'>Home</Link>
           </Navbar.Brand>
+          </Navbar.Header>
           <Navbar.Brand>
           <Link to='/About'>About</Link>
           </Navbar.Brand>
@@ -25,7 +26,6 @@ const Navy = () => {
           <Navbar.Brand>
           <Link to='/Signup'>Sign up</Link>
           </Navbar.Brand>
-        </Navbar.Header>
         </Nav>
       </Navbar>
 

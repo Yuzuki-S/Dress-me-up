@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {ButtonToolbar, Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 function About () {
   return (
     <div className='box'>
@@ -29,6 +30,15 @@ function About () {
         </p>
         <h2>5. YOU WEAR AND LOOK GREAT </h2>
         <p> Dress up and you are ready to go show off your new outfit! </p>
+        <div id="buttonsMain">
+        <ButtonToolbar>
+          <Link id = "list" to = "/Package">
+            <Button id= "button2" bsStyle="primary" bsSize="large" >
+              Order now
+            </Button>
+          </Link>
+        </ButtonToolbar>
+      </div>
     </div>
   )
 }
