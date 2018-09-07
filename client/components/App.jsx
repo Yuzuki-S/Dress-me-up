@@ -1,7 +1,7 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import Home from './Home'
-import Nav from './Nav'
+import Navy from './Navy'
 import About from './About'
 import Contact from './Contact'
 import Login from './Login'
@@ -16,16 +16,16 @@ class App extends React.Component {
     super(props)
   }
 
-  handleClick = () => {
-    console.log('this is:', this);
-  }
+  // handleClick = () => {
+  //   console.log('this is:', this);
+  // }
   render() {
     return (
       <Router>
-        <div className='app'>
-          <div id="floaty" class="row">
-            <div class="col-sm-4">
-              <Route path='/' component={Nav} />
+        <div id='app'>
+        <Route path='/' component={Navy} />
+
+
                 <div id="bodyThing"className='col-lg-8'>
                   <Route exact path='/' component={Home} />
                   <Route path='/About' component={About} />
@@ -39,8 +39,7 @@ class App extends React.Component {
                   <Route exact path='/Package/work' component={Work} />
                   
                 </div>
-            </div>
-          </div>
+
         </div>
       </Router>
     )

@@ -3,7 +3,7 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  html,body {
+body {
       background-color: white;
       height: 100%;
       width: 100%;
@@ -12,7 +12,9 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       color: aliceblue;
-      
+      margin: 0 !important;
+      padding: 0 !important;
+
   }
 }
 .container {
@@ -20,12 +22,6 @@ body {
   padding: 0%;
   height: 100%;
   width:100%;
-}
-
-.nav {
-  margin-top: 30px;
-  margin-right: 30px;
- 
 }
 
 .content {
@@ -72,6 +68,7 @@ li {
   padding-right: 20px;
   font-family: 'Permanent Marker', cursive;
   min-height: 800px;
+  margin: auto;
 }
 
 p {
@@ -92,16 +89,15 @@ p {
   padding-bottom: 5px;
 }
 
-/* .app {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-} */
+#app {
+ padding:0%;
+ top:0%;
+} 
 
 #bodyThing {
   position: relative;
-  top: -200px;
-  left: 50%;
+  margin: auto;
+ margin-left: 15%;
 }
  
 #buttonsMain{
