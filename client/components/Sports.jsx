@@ -3,7 +3,18 @@ import {Carousel} from 'react-bootstrap'
 
 function handleClick(e) {
   e.preventDefault();
-  console.log('The save was clicked.')
+  let elementArr = document.getElementsByClassName('active')
+  console.log(elementArr);
+  let Arr = Array.prototype.slice.call(elementArr);
+  console.log(Arr);
+  for (var i = 0; i < Arr.length; i++) {
+    Arr.splice(i , 1);
+  }
+  
+  
+  for(let i = 0; i < Arr.length; i++){
+    console.log(Arr[i].childNodes[0].id)
+  }
 }
 
 function Sports () {
@@ -15,10 +26,10 @@ function Sports () {
           <div id="carousel">
 <Carousel interval={null}>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/puffer.jpg" />
+    <img width={360} height={425} alt="360x425" id="puffer"  src="/puffer.jpg" />
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/hoodie.jpg" />
+    <img width={360} height={425} alt="360x425" id="hoodie" src="/hoodie.jpg" />
 
   </Carousel.Item>
 
@@ -28,13 +39,13 @@ function Sports () {
 <div id="carousel">
 <Carousel interval={null}>
 <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/linen.jpg" />
+    <img width={360} height={425} alt="360x425" id="linen" src="/linen.jpg" />
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/crew.jpg" />
+    <img width={360} height={425} alt="360x425" id="crew" src="/crew.jpg" />
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/green.jpg" />
+    <img width={360} height={425} alt="360x425" id="green" src="/green.jpg" />
   </Carousel.Item>
 </Carousel>
 
@@ -42,11 +53,11 @@ function Sports () {
     <div id="carousel">
 <Carousel interval={null}>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/jersey.jpg" />
+    <img width={360} height={425} alt="360x425" id="jersey" src="/jersey.jpg" />
 
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/drawcord.jpg" />
+    <img width={360} height={425} alt="360x425" id="drawcord" src="/drawcord.jpg" />
   </Carousel.Item>
 </Carousel>
 
@@ -56,23 +67,16 @@ function Sports () {
 <div id="carousel">
 <Carousel interval={null}>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/leon.jpg" />
+    <img width={360} height={425} alt="360x425" id="leon" src="/leon.jpg" />
 
   </Carousel.Item>
   <Carousel.Item>
-    <img  id="yuz" width={360} height={425} alt="360x425" src="/lola.jpg" />
+    <img  id="yuz" width={360} height={425}  alt="360x425" id="lola" src="/lola.jpg" />
 
   </Carousel.Item>
 
 </Carousel>
     </div>
-    {/* <form name="shoeForm">
-      <select>
-        <option name="shoes" type="dropdown">black shoes</option>
-        <option name="shoes" type="dropdown">purple shoes</option>
-        <option name="shoes" type="dropdown">high heels shoes</option>
-        </select>
-      </form> */}
           <button onClick={handleClick}>Save</button>
     </div>
     </div>

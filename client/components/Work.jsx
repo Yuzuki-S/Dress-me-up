@@ -3,7 +3,18 @@ import {Carousel} from 'react-bootstrap'
 
 function handleClick(e) {
   e.preventDefault();
-  console.log('The save was clicked.')
+  let elementArr = document.getElementsByClassName('active')
+  console.log(elementArr);
+  let Arr = Array.prototype.slice.call(elementArr);
+  console.log(Arr);
+  for (var i = 0; i < Arr.length; i++) {
+    Arr.splice(i , 1);
+  }
+  
+  
+  for(let i = 0; i < Arr.length; i++){
+    console.log(Arr[i].childNodes[0].id)
+  }
 }
 
 function Work () {
@@ -14,14 +25,14 @@ function Work () {
       <div id="carousel">
 <Carousel interval={null}>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/blue-top.jpg" />
+    <img width={360} height={425} alt="360x425" id="blue-top" src="/blue-top.jpg" />
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/shirts.jpg" />
+    <img width={360} height={425} alt="360x425" id="shirts" src="/shirts.jpg" />
 
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/silk.jpg" />
+    <img width={360} height={425} alt="360x425" id="silk" src="/silk.jpg" />
 
   </Carousel.Item>
 
@@ -31,10 +42,10 @@ function Work () {
 <div id="carousel">
 <Carousel interval={null}>
 <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/ponte.jpg" />
+    <img width={360} height={425} alt="360x425" id="ponte" src="/ponte.jpg" />
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/slv.jpg" />
+    <img width={360} height={425} alt="360x425" id="slv" src="/slv.jpg" />
   </Carousel.Item>
 
 </Carousel>
@@ -43,11 +54,11 @@ function Work () {
     <div id="carousel">
 <Carousel interval={null}>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/slim-cropped-pants.jpg" />
+    <img width={360} height={425} alt="360x425" id="slim-cropped-pants" src="/slim-cropped-pants.jpg" />
 
   </Carousel.Item>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/skirt.jpg" />
+    <img width={360} height={425} alt="360x425" id="skirt" src="/skirt.jpg" />
   </Carousel.Item>
 </Carousel>
 
@@ -57,15 +68,15 @@ function Work () {
 <div id="carousel">
 <Carousel interval={null}>
   <Carousel.Item>
-    <img width={360} height={425} alt="360x425" src="/adele.jpg" />
+    <img width={360} height={425} alt="360x425" id="adele" src="/adele.jpg" />
 
   </Carousel.Item>
   <Carousel.Item>
-    <img  id="yuz" width={360} height={425} alt="360x425" src="/kitten.jpg" />
+    <img  id="yuz" width={360} height={425} alt="360x425" id="kitten" src="/kitten.jpg" />
 
   </Carousel.Item>
   <Carousel.Item>
-    <img  id="yuz" width={360} height={425} alt="360x425" src="/loafer.jpg" />
+    <img  id="yuz" width={360} height={425} alt="360x425" id="loafer" src="/loafer.jpg" />
 
   </Carousel.Item>
 

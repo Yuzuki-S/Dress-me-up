@@ -44918,12 +44918,26 @@ var _reactBootstrap = __webpack_require__(24);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function handleClick(e) {
   e.preventDefault();
-  console.log('The save was clicked.');
+  var elementArr = document.getElementsByClassName('active');
+  console.log(elementArr);
+  var Arr = Array.prototype.slice.call(elementArr);
+  console.log(Arr);
+  for (var i = 0; i < Arr.length; i++) {
+    Arr.splice(i, 1);
+  }
+
+  for (var _i = 0; _i < Arr.length; _i++) {
+    console.log(Arr[_i].childNodes[0].id);
+  }
 }
 
 function Sports() {
+  var _React$createElement;
+
   return _react2.default.createElement(
     'div',
     null,
@@ -44944,12 +44958,12 @@ function Sports() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/puffer.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'puffer', src: '/puffer.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/hoodie.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'hoodie', src: '/hoodie.jpg' })
           )
         )
       ),
@@ -44962,17 +44976,17 @@ function Sports() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/linen.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'linen', src: '/linen.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/crew.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'crew', src: '/crew.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/green.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'green', src: '/green.jpg' })
           )
         )
       ),
@@ -44985,12 +44999,12 @@ function Sports() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/jersey.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'jersey', src: '/jersey.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/drawcord.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'drawcord', src: '/drawcord.jpg' })
           )
         )
       ),
@@ -45003,12 +45017,12 @@ function Sports() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/leon.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'leon', src: '/leon.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { id: 'yuz', width: 360, height: 425, alt: '360x425', src: '/lola.jpg' })
+            _react2.default.createElement('img', (_React$createElement = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement, 'id', 'lola'), _defineProperty(_React$createElement, 'src', '/lola.jpg'), _React$createElement))
           )
         )
       ),
@@ -45042,12 +45056,26 @@ var _reactBootstrap = __webpack_require__(24);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function handleClick(e) {
   e.preventDefault();
-  console.log('The save was clicked.');
+  var elementArr = document.getElementsByClassName('active');
+  console.log(elementArr);
+  var Arr = Array.prototype.slice.call(elementArr);
+  console.log(Arr);
+  for (var i = 0; i < Arr.length; i++) {
+    Arr.splice(i, 1);
+  }
+
+  for (var _i = 0; _i < Arr.length; _i++) {
+    console.log(Arr[_i].childNodes[0].id);
+  }
 }
 
 function Work() {
+  var _React$createElement, _React$createElement2;
+
   return _react2.default.createElement(
     'div',
     null,
@@ -45068,17 +45096,17 @@ function Work() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/blue-top.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'blue-top', src: '/blue-top.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/shirts.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'shirts', src: '/shirts.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/silk.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'silk', src: '/silk.jpg' })
           )
         )
       ),
@@ -45091,12 +45119,12 @@ function Work() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/ponte.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'ponte', src: '/ponte.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/slv.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'slv', src: '/slv.jpg' })
           )
         )
       ),
@@ -45109,12 +45137,12 @@ function Work() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/slim-cropped-pants.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'slim-cropped-pants', src: '/slim-cropped-pants.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/skirt.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'skirt', src: '/skirt.jpg' })
           )
         )
       ),
@@ -45127,17 +45155,17 @@ function Work() {
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', src: '/adele.jpg' })
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'adele', src: '/adele.jpg' })
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { id: 'yuz', width: 360, height: 425, alt: '360x425', src: '/kitten.jpg' })
+            _react2.default.createElement('img', (_React$createElement = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement, 'id', 'kitten'), _defineProperty(_React$createElement, 'src', '/kitten.jpg'), _React$createElement))
           ),
           _react2.default.createElement(
             _reactBootstrap.Carousel.Item,
             null,
-            _react2.default.createElement('img', { id: 'yuz', width: 360, height: 425, alt: '360x425', src: '/loafer.jpg' })
+            _react2.default.createElement('img', (_React$createElement2 = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement2, 'id', 'loafer'), _defineProperty(_React$createElement2, 'src', '/loafer.jpg'), _React$createElement2))
           )
         )
       ),
@@ -45171,10 +45199,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(24);
 
-var _reactDom = __webpack_require__(13);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -45187,7 +45211,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function handleClick(e) {
   e.preventDefault();
-  console.log('The save was clicked.');
   var elementArr = document.getElementsByClassName('active');
   console.log(elementArr);
   var Arr = Array.prototype.slice.call(elementArr);
@@ -45250,6 +45273,15 @@ var Casual = function (_React$Component) {
                 null,
                 _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'textured', src: '/textured.jpg' })
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
             )
           ),
           _react2.default.createElement(
@@ -45273,6 +45305,15 @@ var Casual = function (_React$Component) {
                 null,
                 _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'woven', src: '/woven.jpg' })
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
             )
           ),
           _react2.default.createElement(
@@ -45290,6 +45331,15 @@ var Casual = function (_React$Component) {
                 _reactBootstrap.Carousel.Item,
                 null,
                 _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'drawcord', src: '/drawcord.jpg' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
               )
             )
           ),
@@ -45313,6 +45363,15 @@ var Casual = function (_React$Component) {
                 _reactBootstrap.Carousel.Item,
                 null,
                 _react2.default.createElement('img', (_React$createElement2 = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement2, 'id', 'malia'), _defineProperty(_React$createElement2, 'src', '/malia.jpg'), _React$createElement2))
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
               )
             )
           ),

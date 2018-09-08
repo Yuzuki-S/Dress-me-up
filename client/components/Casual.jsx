@@ -1,10 +1,9 @@
 import React from 'react'
 import {Carousel} from 'react-bootstrap'
-import ReactDOM from 'react-dom';
+
 
 function handleClick(e) {
   e.preventDefault();
-  console.log('The save was clicked.')
   let elementArr = document.getElementsByClassName('active')
   console.log(elementArr);
   let Arr = Array.prototype.slice.call(elementArr);
@@ -42,6 +41,7 @@ class Casual extends React.Component {
                 <img width={360} height={425} alt="360x425" id="textured" src="/textured.jpg" />  
               </Carousel.Item>
             </Carousel>
+            <div><button id ="x">X</button></div>
           </div>
           <div id="carousel">
           <Carousel interval={null}>
@@ -55,6 +55,7 @@ class Casual extends React.Component {
               <img width={360} height={425} alt="360x425" id="woven" src="/woven.jpg" />
             </Carousel.Item>
           </Carousel>
+          <div><button id ="x">X</button></div>
           </div>
           <div id="carousel">
             <Carousel interval={null}>
@@ -65,6 +66,7 @@ class Casual extends React.Component {
                 <img width={360} height={425} alt="360x425" id="drawcord" src="/drawcord.jpg" />
               </Carousel.Item>
             </Carousel>
+            <div><button id ="x">X</button></div>
           </div>
           <div id="carousel">
           <Carousel interval={null}>
@@ -78,6 +80,7 @@ class Casual extends React.Component {
               <img  id="yuz" width={360} height={425} alt="360x425" id="malia" src="/malia.jpg" />
             </Carousel.Item>
           </Carousel>
+          <div><button id ="x">X</button></div>
           </div>
           <button onClick={handleClick}>Save</button>   
       </div>
