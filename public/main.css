@@ -132,3 +132,7 @@ button {
   min-height: 35px;
   min-width: 35px;
 }
+
+#basic-nav-dropdown {
+  font-size: 20px;
+}

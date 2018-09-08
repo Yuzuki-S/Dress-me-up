@@ -1,5 +1,5 @@
 import React from 'react'
-import {Carousel} from 'react-bootstrap'
+import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
 
 
 function handleClick(e) {
@@ -17,6 +17,12 @@ function handleClick(e) {
     console.log(Arr[i].childNodes[0].id)
   }
 }
+
+const popoverHoverFocus = (
+  <Popover id="popover-trigger-hover-focus">
+    <strong>Remove the item</strong> 
+  </Popover>
+);
 
 
 class Casual extends React.Component {
@@ -41,7 +47,15 @@ class Casual extends React.Component {
                 <img width={360} height={425} alt="360x425" id="textured" src="/textured.jpg" />  
               </Carousel.Item>
             </Carousel>
-            <div><button id ="x">X</button></div>
+            <div>
+              <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+            </div>
           </div>
           <div id="carousel">
           <Carousel interval={null}>
@@ -55,7 +69,15 @@ class Casual extends React.Component {
               <img width={360} height={425} alt="360x425" id="woven" src="/woven.jpg" />
             </Carousel.Item>
           </Carousel>
-          <div><button id ="x">X</button></div>
+          <div>
+          <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+            </div>
           </div>
           <div id="carousel">
             <Carousel interval={null}>
@@ -66,7 +88,15 @@ class Casual extends React.Component {
                 <img width={360} height={425} alt="360x425" id="drawcord" src="/drawcord.jpg" />
               </Carousel.Item>
             </Carousel>
-            <div><button id ="x">X</button></div>
+            <div>
+            <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+              </div>
           </div>
           <div id="carousel">
           <Carousel interval={null}>
@@ -80,7 +110,15 @@ class Casual extends React.Component {
               <img  id="yuz" width={360} height={425} alt="360x425" id="malia" src="/malia.jpg" />
             </Carousel.Item>
           </Carousel>
-          <div><button id ="x">X</button></div>
+          <div>
+          <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+            </div>
           </div>
           <button onClick={handleClick}>Save</button>   
       </div>

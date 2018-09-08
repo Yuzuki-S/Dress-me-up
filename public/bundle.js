@@ -44547,6 +44547,39 @@ var Navy = function Navy() {
           { to: '/Signup' },
           'Sign up'
         )
+      ),
+      _react2.default.createElement(
+        _reactBootstrap.NavDropdown,
+        { id: 'basic-nav-dropdown', title: 'Package' },
+        _react2.default.createElement(
+          _reactBootstrap.MenuItem,
+          { id: 'basic-nav-dropdown' },
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/Package/sports' },
+            'Sports'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.MenuItem,
+          { id: 'basic-nav-dropdown' },
+          '   ',
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/Package/casual' },
+            'Casual'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.MenuItem,
+          { id: 'basic-nav-dropdown' },
+          '   ',
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/Package/work' },
+            'Work'
+          )
+        )
       )
     )
   );
@@ -44935,6 +44968,16 @@ function handleClick(e) {
   }
 }
 
+var popoverHoverFocus = _react2.default.createElement(
+  _reactBootstrap.Popover,
+  { id: 'popover-trigger-hover-focus' },
+  _react2.default.createElement(
+    'strong',
+    null,
+    'Remove the item'
+  )
+);
+
 function Sports() {
   var _React$createElement;
 
@@ -44965,6 +45008,25 @@ function Sports() {
             null,
             _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'hoodie', src: '/hoodie.jpg' })
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
+          )
         )
       ),
       _react2.default.createElement(
@@ -44988,6 +45050,25 @@ function Sports() {
             null,
             _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'green', src: '/green.jpg' })
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
+          )
         )
       ),
       _react2.default.createElement(
@@ -45006,6 +45087,25 @@ function Sports() {
             null,
             _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'drawcord', src: '/drawcord.jpg' })
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
+          )
         )
       ),
       _react2.default.createElement(
@@ -45023,6 +45123,25 @@ function Sports() {
             _reactBootstrap.Carousel.Item,
             null,
             _react2.default.createElement('img', (_React$createElement = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement, 'id', 'lola'), _defineProperty(_React$createElement, 'src', '/lola.jpg'), _React$createElement))
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
           )
         )
       ),
@@ -45073,6 +45192,16 @@ function handleClick(e) {
   }
 }
 
+var popoverHoverFocus = _react2.default.createElement(
+  _reactBootstrap.Popover,
+  { id: 'popover-trigger-hover-focus' },
+  _react2.default.createElement(
+    'strong',
+    null,
+    'Remove the item'
+  )
+);
+
 function Work() {
   var _React$createElement, _React$createElement2;
 
@@ -45108,6 +45237,25 @@ function Work() {
             null,
             _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'silk', src: '/silk.jpg' })
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
+          )
         )
       ),
       _react2.default.createElement(
@@ -45126,6 +45274,25 @@ function Work() {
             null,
             _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'slv', src: '/slv.jpg' })
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
+          )
         )
       ),
       _react2.default.createElement(
@@ -45143,6 +45310,25 @@ function Work() {
             _reactBootstrap.Carousel.Item,
             null,
             _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'skirt', src: '/skirt.jpg' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
           )
         )
       ),
@@ -45166,6 +45352,25 @@ function Work() {
             _reactBootstrap.Carousel.Item,
             null,
             _react2.default.createElement('img', (_React$createElement2 = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement2, 'id', 'loafer'), _defineProperty(_React$createElement2, 'src', '/loafer.jpg'), _React$createElement2))
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { id: 'x' },
+                'X'
+              )
+            )
           )
         )
       ),
@@ -45224,6 +45429,16 @@ function handleClick(e) {
   }
 }
 
+var popoverHoverFocus = _react2.default.createElement(
+  _reactBootstrap.Popover,
+  { id: 'popover-trigger-hover-focus' },
+  _react2.default.createElement(
+    'strong',
+    null,
+    'Remove the item'
+  )
+);
+
 var Casual = function (_React$Component) {
   _inherits(Casual, _React$Component);
 
@@ -45278,9 +45493,19 @@ var Casual = function (_React$Component) {
               'div',
               null,
               _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
+                _reactBootstrap.ButtonToolbar,
+                null,
+                _react2.default.createElement(
+                  _reactBootstrap.OverlayTrigger,
+                  {
+                    trigger: ['hover', 'focus'],
+                    overlay: popoverHoverFocus },
+                  _react2.default.createElement(
+                    'button',
+                    { id: 'x' },
+                    'X'
+                  )
+                )
               )
             )
           ),
@@ -45310,9 +45535,19 @@ var Casual = function (_React$Component) {
               'div',
               null,
               _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
+                _reactBootstrap.ButtonToolbar,
+                null,
+                _react2.default.createElement(
+                  _reactBootstrap.OverlayTrigger,
+                  {
+                    trigger: ['hover', 'focus'],
+                    overlay: popoverHoverFocus },
+                  _react2.default.createElement(
+                    'button',
+                    { id: 'x' },
+                    'X'
+                  )
+                )
               )
             )
           ),
@@ -45337,9 +45572,19 @@ var Casual = function (_React$Component) {
               'div',
               null,
               _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
+                _reactBootstrap.ButtonToolbar,
+                null,
+                _react2.default.createElement(
+                  _reactBootstrap.OverlayTrigger,
+                  {
+                    trigger: ['hover', 'focus'],
+                    overlay: popoverHoverFocus },
+                  _react2.default.createElement(
+                    'button',
+                    { id: 'x' },
+                    'X'
+                  )
+                )
               )
             )
           ),
@@ -45369,9 +45614,19 @@ var Casual = function (_React$Component) {
               'div',
               null,
               _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
+                _reactBootstrap.ButtonToolbar,
+                null,
+                _react2.default.createElement(
+                  _reactBootstrap.OverlayTrigger,
+                  {
+                    trigger: ['hover', 'focus'],
+                    overlay: popoverHoverFocus },
+                  _react2.default.createElement(
+                    'button',
+                    { id: 'x' },
+                    'X'
+                  )
+                )
               )
             )
           ),

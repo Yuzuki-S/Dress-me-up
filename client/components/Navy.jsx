@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {Navbar, NavDropdown, Nav, NavItem,MenuItem } from 'react-bootstrap'
+import {Navbar, NavDropdown, Nav, NavItem,MenuItem,  } from 'react-bootstrap'
 
 
 
@@ -26,6 +26,12 @@ const Navy = () => {
           <Navbar.Brand>
           <Link to='/Signup'>Sign up</Link>
           </Navbar.Brand>
+          <NavDropdown id="basic-nav-dropdown"title="Package" >
+        <MenuItem id="basic-nav-dropdown">
+        <Link to='/Package/sports'>Sports</Link></MenuItem>
+        <MenuItem id="basic-nav-dropdown">   <Link to='/Package/casual'>Casual</Link></MenuItem>
+        <MenuItem id="basic-nav-dropdown">   <Link to='/Package/work'>Work</Link></MenuItem>
+      </NavDropdown>
         </Nav>
       </Navbar>
 

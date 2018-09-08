@@ -1,5 +1,5 @@
 import React from 'react'
-import {Carousel} from 'react-bootstrap'
+import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
 
 function handleClick(e) {
   e.preventDefault();
@@ -16,6 +16,13 @@ function handleClick(e) {
     console.log(Arr[i].childNodes[0].id)
   }
 }
+
+const popoverHoverFocus = (
+  <Popover id="popover-trigger-hover-focus">
+    <strong>Remove the item</strong> 
+  </Popover>
+)
+
 
 function Work () {
   return (
@@ -37,6 +44,15 @@ function Work () {
   </Carousel.Item>
 
 </Carousel>
+<div>
+              <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+            </div>
     </div>
 
 <div id="carousel">
@@ -49,7 +65,15 @@ function Work () {
   </Carousel.Item>
 
 </Carousel>
-
+<div>
+              <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+            </div>
     </div>
     <div id="carousel">
 <Carousel interval={null}>
@@ -61,7 +85,15 @@ function Work () {
     <img width={360} height={425} alt="360x425" id="skirt" src="/skirt.jpg" />
   </Carousel.Item>
 </Carousel>
-
+<div>
+              <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+            </div>
     </div>
 
 
@@ -81,6 +113,15 @@ function Work () {
   </Carousel.Item>
 
 </Carousel>
+<div>
+              <ButtonToolbar>
+              <OverlayTrigger
+                trigger={['hover', 'focus']}
+                overlay={popoverHoverFocus} >
+            <button id ="x">X</button>
+            </OverlayTrigger>
+            </ButtonToolbar>
+            </div>
     </div>
     <button onClick={handleClick}>Save</button>
     </div>
