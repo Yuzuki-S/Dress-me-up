@@ -1,9 +1,10 @@
 import React from 'react'
-import {Grid, Row, Col, Thumbnail,
-Carousel
+import {Carousel} from 'react-bootstrap'
 
-
-} from 'react-bootstrap'
+function handleClick(e) {
+  e.preventDefault();
+  console.log('The save was clicked.')
+}
 
 function Sports () {
   return (
@@ -72,7 +73,7 @@ function Sports () {
         <option name="shoes" type="dropdown">high heels shoes</option>
         </select>
       </form> */}
-          <button>Save</button>
+          <button onClick={handleClick}>Save</button>
     </div>
     </div>
   )

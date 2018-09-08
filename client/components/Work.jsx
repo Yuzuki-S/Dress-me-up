@@ -1,9 +1,11 @@
 import React from 'react'
-import {Grid, Row, Col, Thumbnail,
-  Carousel
-  
-  
-  } from 'react-bootstrap'
+import {Carousel} from 'react-bootstrap'
+
+function handleClick(e) {
+  e.preventDefault();
+  console.log('The save was clicked.')
+}
+
 function Work () {
   return (
     <div>
@@ -69,7 +71,7 @@ function Work () {
 
 </Carousel>
     </div>
-    <button>Save</button>
+    <button onClick={handleClick}>Save</button>
     </div>
     </div>
   )
