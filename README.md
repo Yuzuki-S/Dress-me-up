@@ -15,8 +15,8 @@ This will help users to save time shopping and also keep their wardrobe up to da
    * [x] 2. When users click "Order a package", display the options of packages.
    * [x] 3. When users click an option of their preferred package, 
     show clothing that is included in the package.
-   * [] 4. Users should be able to click each item to remove or change the items.
-   * [] 5. Users should also be able to make a request for their next package.
+   * [ ] 4. Users should be able to click each item to remove or change the items.
+   * [ ] 5. Users should also be able to make a request for their next package.
 
 **User Story 3:** *As a user, I want to be able to contact the company.
   
