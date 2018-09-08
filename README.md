@@ -6,8 +6,9 @@ Users are able to set the budget, style and period of their personal package.
 This will help users to save time shopping and also keep their wardrobe up to date and fresh.
 
 **User Story 1:** *As a user, I want to find out what the business is about.*
-    * [x] 1. Have a link to "About" in the navigation bar.
-    * [x] 2. When users click "About", display information about the business.
+   * [x] 1. Have a link to "About" in the navigation bar.
+   * [x] 2. When users click "About", display information about the business.
+
 
 **User Story 2:** *As a user, I want to see package options*
 
