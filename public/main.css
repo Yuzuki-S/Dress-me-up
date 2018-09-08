@@ -125,14 +125,13 @@ p {
 button {
   padding: 1%;
   border-radius: 5px;
-  top: 200px;
 }
+
+
 
 #x {
   min-height: 35px;
   min-width: 35px;
 }
 
-#basic-nav-dropdown {
-  font-size: 20px;
-}
+
