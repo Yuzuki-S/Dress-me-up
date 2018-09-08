@@ -1,12 +1,13 @@
 import React from 'react'
 import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
+import Box from './Box'
 
 function handleClick(e) {
   e.preventDefault();
   let elementArr = document.getElementsByClassName('active')
-  console.log(elementArr);
+
   let Arr = Array.prototype.slice.call(elementArr);
-  console.log(Arr);
+
   for (var i = 0; i < Arr.length; i++) {
     Arr.splice(i , 1);
   }
@@ -17,108 +18,18 @@ function handleClick(e) {
   }
 }
 
-const popoverHoverFocus = (
-  <Popover id="popover-trigger-hover-focus">
-    <strong>Remove the item</strong> 
-  </Popover>
-);
-
 function Sports () {
   return (
     <div>
-    <div className='box'>
-      <h1>Sporty Package</h1>
+      <div className='box'>
+        <h1>Sporty Package</h1>
+        <Box src1 = "/puffer.jpg" id1 = "puffer" src2= "/hoodie.jpg" id2="hoodie" src3="/peach.jpg" id3="peach"/>
+        <Box src1 = "/linen.jpg" id1 = "linen" src2= "/crew.jpg" id2="crew" src3="/green.jpg" id3="green"/> 
+        <Box src1 = "/jersey.jpg" id1 = "jersey" src2= "/drawcord.jpg" id2="drawcord" src3="/legging.jpg" id3="legging"/>   
+        <Box src1 = "/leon.jpg" id1 = "leon" src2= "/lola.jpg" id2="lola" src3="/pink.jpg" id3="pink"/>
 
-          <div id="carousel">
-<Carousel interval={null}>
-  <Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="puffer"  src="/puffer.jpg" />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="hoodie" src="/hoodie.jpg" />
-
-  </Carousel.Item>
-
-</Carousel>
-<div>
-              <ButtonToolbar>
-              <OverlayTrigger
-                trigger={['hover', 'focus']}
-                overlay={popoverHoverFocus} >
-            <button id ="x">X</button>
-            </OverlayTrigger>
-            </ButtonToolbar>
-            </div>
-    </div>
-
-<div id="carousel">
-<Carousel interval={null}>
-<Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="linen" src="/linen.jpg" />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="crew" src="/crew.jpg" />
-  </Carousel.Item>
-  <Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="green" src="/green.jpg" />
-  </Carousel.Item>
-</Carousel>
-<div>
-              <ButtonToolbar>
-              <OverlayTrigger
-                trigger={['hover', 'focus']}
-                overlay={popoverHoverFocus} >
-            <button id ="x">X</button>
-            </OverlayTrigger>
-            </ButtonToolbar>
-            </div>
-    </div>
-    <div id="carousel">
-<Carousel interval={null}>
-  <Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="jersey" src="/jersey.jpg" />
-
-  </Carousel.Item>
-  <Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="drawcord" src="/drawcord.jpg" />
-  </Carousel.Item>
-</Carousel>
-<div>
-              <ButtonToolbar>
-              <OverlayTrigger
-                trigger={['hover', 'focus']}
-                overlay={popoverHoverFocus} >
-            <button id ="x">X</button>
-            </OverlayTrigger>
-            </ButtonToolbar>
-            </div>
-    </div>
-
-
-<div id="carousel">
-<Carousel interval={null}>
-  <Carousel.Item>
-    <img width={360} height={425} alt="360x425" id="leon" src="/leon.jpg" />
-
-  </Carousel.Item>
-  <Carousel.Item>
-    <img  id="yuz" width={360} height={425}  alt="360x425" id="lola" src="/lola.jpg" />
-
-  </Carousel.Item>
-
-</Carousel>
-<div>
-              <ButtonToolbar>
-              <OverlayTrigger
-                trigger={['hover', 'focus']}
-                overlay={popoverHoverFocus} >
-            <button id ="x">X</button>
-            </OverlayTrigger>
-            </ButtonToolbar>
-            </div>
-    </div>
-          <button id="save" onClick={handleClick}>Save</button>
-    </div>
+        <button id="save" onClick={handleClick}>Save</button>
+      </div>
     </div>
   )
 }
