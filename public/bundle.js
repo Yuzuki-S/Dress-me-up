@@ -44949,9 +44949,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(24);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Box = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/Box\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var _Box2 = _interopRequireDefault(_Box);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function handleClick(e) {
   e.preventDefault();
@@ -44968,19 +44970,7 @@ function handleClick(e) {
   }
 }
 
-var popoverHoverFocus = _react2.default.createElement(
-  _reactBootstrap.Popover,
-  { id: 'popover-trigger-hover-focus' },
-  _react2.default.createElement(
-    'strong',
-    null,
-    'Remove the item'
-  )
-);
-
 function Sports() {
-  var _React$createElement;
-
   return _react2.default.createElement(
     'div',
     null,
@@ -44992,159 +44982,10 @@ function Sports() {
         null,
         'Sporty Package'
       ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'puffer', src: '/puffer.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'hoodie', src: '/hoodie.jpg' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'linen', src: '/linen.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'crew', src: '/crew.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'green', src: '/green.jpg' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'jersey', src: '/jersey.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'drawcord', src: '/drawcord.jpg' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'leon', src: '/leon.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', (_React$createElement = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement, 'id', 'lola'), _defineProperty(_React$createElement, 'src', '/lola.jpg'), _React$createElement))
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
+      _react2.default.createElement(_Box2.default, { src1: '/puffer.jpg', id1: 'puffer', src2: '/hoodie.jpg', id2: 'hoodie', src3: '/peach.jpg', id3: 'peach' }),
+      _react2.default.createElement(_Box2.default, { src1: '/linen.jpg', id1: 'linen', src2: '/crew.jpg', id2: 'crew', src3: '/green.jpg', id3: 'green' }),
+      _react2.default.createElement(_Box2.default, { src1: '/jersey.jpg', id1: 'jersey', src2: '/drawcord.jpg', id2: 'drawcord', src3: '/legging.jpg', id3: 'legging' }),
+      _react2.default.createElement(_Box2.default, { src1: '/leon.jpg', id1: 'leon', src2: '/lola.jpg', id2: 'lola', src3: '/pink.jpg', id3: 'pink' }),
       _react2.default.createElement(
         'button',
         { id: 'save', onClick: handleClick },
@@ -45173,9 +45014,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(24);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Box = __webpack_require__(361);
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var _Box2 = _interopRequireDefault(_Box);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function handleClick(e) {
   e.preventDefault();
@@ -45203,8 +45046,6 @@ var popoverHoverFocus = _react2.default.createElement(
 );
 
 function Work() {
-  var _React$createElement, _React$createElement2;
-
   return _react2.default.createElement(
     'div',
     null,
@@ -45216,164 +45057,10 @@ function Work() {
         null,
         'Work Package'
       ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'blue-top', src: '/blue-top.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'shirts', src: '/shirts.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'silk', src: '/silk.jpg' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'ponte', src: '/ponte.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'slv', src: '/slv.jpg' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'slim-cropped-pants', src: '/slim-cropped-pants.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'skirt', src: '/skirt.jpg' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'adele', src: '/adele.jpg' })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', (_React$createElement = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement, 'id', 'kitten'), _defineProperty(_React$createElement, 'src', '/kitten.jpg'), _React$createElement))
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', (_React$createElement2 = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement2, 'id', 'loafer'), _defineProperty(_React$createElement2, 'src', '/loafer.jpg'), _React$createElement2))
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
-            null,
-            _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
-              _react2.default.createElement(
-                'button',
-                { id: 'x' },
-                'X'
-              )
-            )
-          )
-        )
-      ),
+      _react2.default.createElement(_Box2.default, { src1: '/blue-top.jpg', id1: 'blue-top', src2: '/shirts.jpg', id2: 'shirts', src3: '/silk.jpg', id3: 'silk' }),
+      _react2.default.createElement(_Box2.default, { src1: '/ponte.jpg', id1: 'ponte', src2: '/slv.jpg', id2: 'slv', src3: '/utility.jpg', id3: 'utility' }),
+      _react2.default.createElement(_Box2.default, { src1: '/slim-cropped-pants.jpg', id1: 'bslim-cropped-pants', src2: '/skirt.jpg', id2: 'skirt', src3: '/wide.jpg', id3: 'wide' }),
+      _react2.default.createElement(_Box2.default, { src1: '/adele.jpg', id1: 'adele', src2: '/kitten.jpg', id2: 'kitten', src3: '/loafer.jpg', id3: 'loafer' }),
       _react2.default.createElement(
         'button',
         { onClick: handleClick },
@@ -45404,9 +45091,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(24);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _Box = __webpack_require__(361);
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var _Box2 = _interopRequireDefault(_Box);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -45428,31 +45117,6 @@ function handleClick(e) {
   }
 }
 
-var popoverHoverFocus = _react2.default.createElement(
-  _reactBootstrap.Popover,
-  { id: 'popover-trigger-hover-focus' },
-  _react2.default.createElement(
-    'strong',
-    null,
-    'Remove the item'
-  )
-);
-
-function crossClick(e) {
-  e.preventDefault();
-  //console.log(e.target.name) //logs firstBox
-  var firstBox = document.getElementsByName(e.target.name);
-  console.log(firstBox);
-  var firstBoxDiv = firstBox[0].childNodes[0];
-  var firstBoxDiv2 = firstBox[0].childNodes[1];
-  console.log(firstBoxDiv);
-  firstBoxDiv.style.display = "none";
-  firstBoxDiv2.style.display = "none";
-  var nameActive = document.getElementsByClassName('active');
-
-  //find element on the page that matches e.target.name
-}
-
 var Casual = function (_React$Component) {
   _inherits(Casual, _React$Component);
 
@@ -45470,8 +45134,6 @@ var Casual = function (_React$Component) {
   _createClass(Casual, [{
     key: 'render',
     value: function render() {
-      var _React$createElement, _React$createElement2;
-
       return _react2.default.createElement(
         'div',
         null,
@@ -45483,169 +45145,10 @@ var Casual = function (_React$Component) {
             null,
             'Casual Package'
           ),
-          _react2.default.createElement(
-            'div',
-            { name: 'firstBox', id: 'carousel' },
-            _react2.default.createElement(
-              _reactBootstrap.Carousel,
-              { interval: null },
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'rib', src: '/rib.jpg' })
-              ),
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'trim', src: '/trim.jpg' })
-              ),
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'textured', src: '/textured.jpg' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                _reactBootstrap.ButtonToolbar,
-                null,
-                _react2.default.createElement(
-                  _reactBootstrap.OverlayTrigger,
-                  {
-                    trigger: ['hover', 'focus'],
-                    overlay: popoverHoverFocus },
-                  _react2.default.createElement(
-                    'button',
-                    { name: 'firstBox', id: 'x', onClick: crossClick },
-                    'X'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { id: 'carousel' },
-            _react2.default.createElement(
-              _reactBootstrap.Carousel,
-              { interval: null },
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'noir', src: '/noir.jpg' })
-              ),
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'black', src: '/black.jpg' })
-              ),
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'woven', src: '/woven.jpg' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                _reactBootstrap.ButtonToolbar,
-                null,
-                _react2.default.createElement(
-                  _reactBootstrap.OverlayTrigger,
-                  {
-                    trigger: ['hover', 'focus'],
-                    overlay: popoverHoverFocus },
-                  _react2.default.createElement(
-                    'button',
-                    { id: 'x' },
-                    'X'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { id: 'carousel' },
-            _react2.default.createElement(
-              _reactBootstrap.Carousel,
-              { interval: null },
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'jeans', src: '/jeans.jpg' })
-              ),
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'drawcord', src: '/drawcord.jpg' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                _reactBootstrap.ButtonToolbar,
-                null,
-                _react2.default.createElement(
-                  _reactBootstrap.OverlayTrigger,
-                  {
-                    trigger: ['hover', 'focus'],
-                    overlay: popoverHoverFocus },
-                  _react2.default.createElement(
-                    'button',
-                    { id: 'x' },
-                    'X'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { id: 'carousel' },
-            _react2.default.createElement(
-              _reactBootstrap.Carousel,
-              { interval: null },
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: 'anya', src: '/anya.jpg' })
-              ),
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', (_React$createElement = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement, 'id', 'jusmin'), _defineProperty(_React$createElement, 'src', '/jusmin.jpg'), _React$createElement))
-              ),
-              _react2.default.createElement(
-                _reactBootstrap.Carousel.Item,
-                null,
-                _react2.default.createElement('img', (_React$createElement2 = { id: 'yuz', width: 360, height: 425, alt: '360x425' }, _defineProperty(_React$createElement2, 'id', 'malia'), _defineProperty(_React$createElement2, 'src', '/malia.jpg'), _React$createElement2))
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                _reactBootstrap.ButtonToolbar,
-                null,
-                _react2.default.createElement(
-                  _reactBootstrap.OverlayTrigger,
-                  {
-                    trigger: ['hover', 'focus'],
-                    overlay: popoverHoverFocus },
-                  _react2.default.createElement(
-                    'button',
-                    { id: 'x' },
-                    'X'
-                  )
-                )
-              )
-            )
-          ),
+          _react2.default.createElement(_Box2.default, { src1: '/rib.jpg', id1: 'rib', src2: '/trim.jpg', id2: 'trim', src3: '/textured.jpg', id3: 'textured' }),
+          _react2.default.createElement(_Box2.default, { src1: '/noir.jpg', id1: 'noir', src2: '/black.jpg', id2: 'black', src3: '/woven.jpg', id3: 'woven' }),
+          _react2.default.createElement(_Box2.default, { src1: '/jeans.jpg', id1: 'jeans', src2: '/drawcord.jpg', id2: 'drawcord', src3: '/white.jpg', id3: 'white' }),
+          _react2.default.createElement(_Box2.default, { src1: '/anya.jpg', id1: 'anya', src2: '/jusmin.jpg', id2: 'jusmin', src3: '/malia.jpg', id3: 'malia' }),
           _react2.default.createElement(
             'button',
             { onClick: handleClick },
@@ -45660,6 +45163,120 @@ var Casual = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Casual;
+
+/***/ }),
+/* 361 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBootstrap = __webpack_require__(24);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Box = function (_React$Component) {
+  _inherits(Box, _React$Component);
+
+  function Box(props) {
+    _classCallCheck(this, Box);
+
+    return _possibleConstructorReturn(this, (Box.__proto__ || Object.getPrototypeOf(Box)).call(this, props));
+  }
+
+  _createClass(Box, [{
+    key: 'render',
+    value: function render() {
+      var popoverHoverFocus = _react2.default.createElement(
+        _reactBootstrap.Popover,
+        { id: 'popover-trigger-hover-focus' },
+        _react2.default.createElement(
+          'strong',
+          null,
+          'Remove the item'
+        )
+      );
+      function crossClick(e) {
+        e.preventDefault();
+        //console.log(e.target.name) //logs firstBox
+        var firstBox = document.getElementsByName(e.target.name);
+        console.log(firstBox);
+        var firstBoxDiv = firstBox[0].childNodes[0];
+        var firstBoxDiv2 = firstBox[0].childNodes[1];
+        console.log(firstBoxDiv);
+        firstBoxDiv.style.display = "none";
+        firstBoxDiv2.style.display = "none";
+        var nameActive = document.getElementsByClassName('active');
+
+        //find element on the page that matches e.target.name
+      }
+      console.log(this.props);
+
+      return _react2.default.createElement(
+        'div',
+        { name: 'firstBox', id: 'carousel' },
+        _react2.default.createElement(
+          _reactBootstrap.Carousel,
+          { interval: null },
+          _react2.default.createElement(
+            _reactBootstrap.Carousel.Item,
+            null,
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id1, src: this.props.src1 })
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Carousel.Item,
+            null,
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id2, src: this.props.src2 })
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Carousel.Item,
+            null,
+            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id3, src: this.props.src3 })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.ButtonToolbar,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.OverlayTrigger,
+              {
+                trigger: ['hover', 'focus'],
+                overlay: popoverHoverFocus },
+              _react2.default.createElement(
+                'button',
+                { name: 'firstBox', id: 'x', onClick: crossClick },
+                'X'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Box;
+}(_react2.default.Component);
+
+exports.default = Box;
 
 /***/ })
 /******/ ]);
