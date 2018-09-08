@@ -125,6 +125,7 @@ p {
 button {
   padding: 1%;
   border-radius: 5px;
+color: black
 }
 
 
@@ -134,4 +135,10 @@ button {
   min-width: 35px;
 }
 
+#basic-nav-dropdown {
+  font-size: 20px;
+}
 
+#buttonsMain {
+  margin-left: 10px;
+  }

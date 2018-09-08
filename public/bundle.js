@@ -45147,7 +45147,7 @@ function Sports() {
       ),
       _react2.default.createElement(
         'button',
-        { onClick: handleClick },
+        { id: 'save', onClick: handleClick },
         'Save'
       )
     )
@@ -45423,7 +45423,6 @@ function handleClick(e) {
   for (var i = 0; i < Arr.length; i++) {
     Arr.splice(i, 1);
   }
-
   for (var _i = 0; _i < Arr.length; _i++) {
     console.log(Arr[_i].childNodes[0].id);
   }
@@ -45439,6 +45438,21 @@ var popoverHoverFocus = _react2.default.createElement(
   )
 );
 
+function crossClick(e) {
+  e.preventDefault();
+  //console.log(e.target.name) //logs firstBox
+  var firstBox = document.getElementsByName(e.target.name);
+  console.log(firstBox);
+  var firstBoxDiv = firstBox[0].childNodes[0];
+  var firstBoxDiv2 = firstBox[0].childNodes[1];
+  console.log(firstBoxDiv);
+  firstBoxDiv.style.display = "none";
+  firstBoxDiv2.style.display = "none";
+  var nameActive = document.getElementsByClassName('active');
+
+  //find element on the page that matches e.target.name
+}
+
 var Casual = function (_React$Component) {
   _inherits(Casual, _React$Component);
 
@@ -45447,7 +45461,9 @@ var Casual = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Casual.__proto__ || Object.getPrototypeOf(Casual)).call(this, props));
 
-    _this.state = {};
+    _this.state = {
+      isHidden: false
+    };
     return _this;
   }
 
@@ -45469,7 +45485,7 @@ var Casual = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { id: 'carousel' },
+            { name: 'firstBox', id: 'carousel' },
             _react2.default.createElement(
               _reactBootstrap.Carousel,
               { interval: null },
@@ -45502,7 +45518,7 @@ var Casual = function (_React$Component) {
                     overlay: popoverHoverFocus },
                   _react2.default.createElement(
                     'button',
-                    { id: 'x' },
+                    { name: 'firstBox', id: 'x', onClick: crossClick },
                     'X'
                   )
                 )
