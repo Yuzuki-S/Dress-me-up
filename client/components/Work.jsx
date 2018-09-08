@@ -5,9 +5,9 @@ import Box from './Box'
 function handleClick(e) {
   e.preventDefault();
   let elementArr = document.getElementsByClassName('active')
-  console.log(elementArr);
+
   let Arr = Array.prototype.slice.call(elementArr);
-  console.log(Arr);
+
   for (var i = 0; i < Arr.length; i++) {
     Arr.splice(i , 1);
   }
@@ -17,12 +17,6 @@ function handleClick(e) {
     console.log(Arr[i].childNodes[0].id)
   }
 }
-
-const popoverHoverFocus = (
-  <Popover id="popover-trigger-hover-focus">
-    <strong>Remove the item</strong> 
-  </Popover>
-)
 
 
 function Work () {

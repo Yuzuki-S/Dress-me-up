@@ -44949,7 +44949,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(24);
 
-var _Box = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/Box\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _Box = __webpack_require__(361);
 
 var _Box2 = _interopRequireDefault(_Box);
 
@@ -44958,9 +44958,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function handleClick(e) {
   e.preventDefault();
   var elementArr = document.getElementsByClassName('active');
-  console.log(elementArr);
+
   var Arr = Array.prototype.slice.call(elementArr);
-  console.log(Arr);
+
   for (var i = 0; i < Arr.length; i++) {
     Arr.splice(i, 1);
   }
@@ -45023,9 +45023,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function handleClick(e) {
   e.preventDefault();
   var elementArr = document.getElementsByClassName('active');
-  console.log(elementArr);
+
   var Arr = Array.prototype.slice.call(elementArr);
-  console.log(Arr);
+
   for (var i = 0; i < Arr.length; i++) {
     Arr.splice(i, 1);
   }
@@ -45034,16 +45034,6 @@ function handleClick(e) {
     console.log(Arr[_i].childNodes[0].id);
   }
 }
-
-var popoverHoverFocus = _react2.default.createElement(
-  _reactBootstrap.Popover,
-  { id: 'popover-trigger-hover-focus' },
-  _react2.default.createElement(
-    'strong',
-    null,
-    'Remove the item'
-  )
-);
 
 function Work() {
   return _react2.default.createElement(
@@ -45106,9 +45096,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function handleClick(e) {
   e.preventDefault();
   var elementArr = document.getElementsByClassName('active');
-  console.log(elementArr);
+
   var Arr = Array.prototype.slice.call(elementArr);
-  console.log(Arr);
+
   for (var i = 0; i < Arr.length; i++) {
     Arr.splice(i, 1);
   }
@@ -45197,12 +45187,28 @@ var Box = function (_React$Component) {
   function Box(props) {
     _classCallCheck(this, Box);
 
-    return _possibleConstructorReturn(this, (Box.__proto__ || Object.getPrototypeOf(Box)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Box.__proto__ || Object.getPrototypeOf(Box)).call(this, props));
+
+    _this.state = {
+      isDeleted: false
+    };
+
+    _this.crossClick = _this.crossClick.bind(_this);
+
+    return _this;
   }
 
   _createClass(Box, [{
+    key: 'crossClick',
+    value: function crossClick() {
+      this.setState({
+        isDeleted: true
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
+
       var popoverHoverFocus = _react2.default.createElement(
         _reactBootstrap.Popover,
         { id: 'popover-trigger-hover-focus' },
@@ -45212,64 +45218,53 @@ var Box = function (_React$Component) {
           'Remove the item'
         )
       );
-      function crossClick(e) {
-        e.preventDefault();
-        //console.log(e.target.name) //logs firstBox
-        var firstBox = document.getElementsByName(e.target.name);
-        console.log(firstBox);
-        var firstBoxDiv = firstBox[0].childNodes[0];
-        var firstBoxDiv2 = firstBox[0].childNodes[1];
-        console.log(firstBoxDiv);
-        firstBoxDiv.style.display = "none";
-        firstBoxDiv2.style.display = "none";
-        var nameActive = document.getElementsByClassName('active');
 
-        //find element on the page that matches e.target.name
-      }
-      console.log(this.props);
-
-      return _react2.default.createElement(
-        'div',
-        { name: 'firstBox', id: 'carousel' },
-        _react2.default.createElement(
-          _reactBootstrap.Carousel,
-          { interval: null },
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id1, src: this.props.src1 })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id2, src: this.props.src2 })
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Carousel.Item,
-            null,
-            _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id3, src: this.props.src3 })
-          )
-        ),
-        _react2.default.createElement(
+      if (!this.state.isDeleted) {
+        return _react2.default.createElement(
           'div',
-          null,
+          { name: 'firstBox', id: 'carousel' },
           _react2.default.createElement(
-            _reactBootstrap.ButtonToolbar,
+            _reactBootstrap.Carousel,
+            { interval: null },
+            _react2.default.createElement(
+              _reactBootstrap.Carousel.Item,
+              null,
+              _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id1, src: this.props.src1 })
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Carousel.Item,
+              null,
+              _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id2, src: this.props.src2 })
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Carousel.Item,
+              null,
+              _react2.default.createElement('img', { width: 360, height: 425, alt: '360x425', id: this.props.id3, src: this.props.src3 })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
             null,
             _react2.default.createElement(
-              _reactBootstrap.OverlayTrigger,
-              {
-                trigger: ['hover', 'focus'],
-                overlay: popoverHoverFocus },
+              _reactBootstrap.ButtonToolbar,
+              null,
               _react2.default.createElement(
-                'button',
-                { name: 'firstBox', id: 'x', onClick: crossClick },
-                'X'
+                _reactBootstrap.OverlayTrigger,
+                {
+                  trigger: ['hover', 'focus'],
+                  overlay: popoverHoverFocus },
+                _react2.default.createElement(
+                  'button',
+                  { name: 'firstBox', id: 'x', onClick: this.crossClick },
+                  'X'
+                )
               )
             )
           )
-        )
-      );
+        );
+      } else {
+        return _react2.default.createElement('div', null);
+      }
     }
   }]);
 

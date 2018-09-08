@@ -1,13 +1,13 @@
 import React from 'react'
 import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
-import Box from '/Box'
+import Box from './Box'
 
 function handleClick(e) {
   e.preventDefault();
   let elementArr = document.getElementsByClassName('active')
-  console.log(elementArr);
+
   let Arr = Array.prototype.slice.call(elementArr);
-  console.log(Arr);
+
   for (var i = 0; i < Arr.length; i++) {
     Arr.splice(i , 1);
   }
