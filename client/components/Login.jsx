@@ -44,10 +44,10 @@ class Login extends React.Component {
 
   <FormGroup>
     <Col smOffset={2} sm={10}>
-      <Button type="submit">Sign in</Button>
+      <Button type="submit">Log in</Button>
     </Col>
   </FormGroup>
-</Form>;
+</Form>
       </div>
      
     </div>
