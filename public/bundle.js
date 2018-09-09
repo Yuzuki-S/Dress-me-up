@@ -27953,6 +27953,10 @@ var _Confirmed = __webpack_require__(362);
 
 var _Confirmed2 = _interopRequireDefault(_Confirmed);
 
+var _Saved = __webpack_require__(363);
+
+var _Saved2 = _interopRequireDefault(_Saved);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27998,7 +28002,10 @@ var App = function (_React$Component) {
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Package/sports', component: _Sports2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Package/casual', component: _Casual2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Package/work', component: _Work2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Contact/confirmed', component: _Confirmed2.default })
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Contact/confirmed', component: _Confirmed2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Package/casual/saved', component: _Saved2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Package/sports/saved', component: _Saved2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Package/work/saved', component: _Saved2.default })
           )
         )
       );
@@ -45348,10 +45355,12 @@ var _Box = __webpack_require__(98);
 
 var _Box2 = _interopRequireDefault(_Box);
 
+var _reactRouterDom = __webpack_require__(39);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function handleClick(e) {
-  e.preventDefault();
+
   var elementArr = document.getElementsByClassName('active');
 
   var Arr = Array.prototype.slice.call(elementArr);
@@ -45391,9 +45400,13 @@ function Sports() {
         )
       ),
       _react2.default.createElement(
-        'button',
-        { id: 'save', onClick: handleClick },
-        'Save'
+        _reactRouterDom.Link,
+        { to: '/Package/work/saved', onClick: handleClick },
+        _react2.default.createElement(
+          'button',
+          { id: 'save' },
+          'Save'
+        )
       )
     )
   );
@@ -45422,10 +45435,11 @@ var _Box = __webpack_require__(98);
 
 var _Box2 = _interopRequireDefault(_Box);
 
+var _reactRouterDom = __webpack_require__(39);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function handleClick(e) {
-  e.preventDefault();
   var elementArr = document.getElementsByClassName('active');
 
   var Arr = Array.prototype.slice.call(elementArr);
@@ -45456,14 +45470,22 @@ function Work() {
       _react2.default.createElement(_Box2.default, { src1: '/slim-cropped-pants.jpg', id1: 'slim-cropped-pants', src2: '/skirt.jpg', id2: 'skirt', src3: '/wide.jpg', id3: 'wide' }),
       _react2.default.createElement(_Box2.default, { src1: '/adele.jpg', id1: 'adele', src2: '/kitten.jpg', id2: 'kitten', src3: '/loafer.jpg', id3: 'loafer' }),
       _react2.default.createElement(
-        'button',
-        { id: 'add', onClick: handleClick },
-        '+Add'
+        'div',
+        null,
+        _react2.default.createElement(
+          'button',
+          { id: 'add', onClick: handleClick },
+          '+Add'
+        )
       ),
       _react2.default.createElement(
-        'button',
-        { id: 'save', onClick: handleClick },
-        'Save'
+        _reactRouterDom.Link,
+        { to: '/Package/work/saved', onClick: handleClick },
+        _react2.default.createElement(
+          'button',
+          { id: 'save' },
+          ' Save'
+        )
       )
     )
   );
@@ -45494,6 +45516,8 @@ var _Box = __webpack_require__(98);
 
 var _Box2 = _interopRequireDefault(_Box);
 
+var _reactRouterDom = __webpack_require__(39);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -45503,7 +45527,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function handleClick(e) {
-  e.preventDefault();
+
   var elementArr = document.getElementsByClassName('active');
 
   var Arr = Array.prototype.slice.call(elementArr);
@@ -45549,14 +45573,22 @@ var Casual = function (_React$Component) {
           _react2.default.createElement(_Box2.default, { src1: '/jeans.jpg', id1: 'jeans', src2: '/drawcord.jpg', id2: 'drawcord', src3: '/white.jpg', id3: 'white' }),
           _react2.default.createElement(_Box2.default, { src1: '/anya.jpg', id1: 'anya', src2: '/jusmin.jpg', id2: 'jusmin', src3: '/malia.jpg', id3: 'malia' }),
           _react2.default.createElement(
-            'button',
-            { id: 'add', onClick: handleClick },
-            '+Add'
+            'div',
+            null,
+            _react2.default.createElement(
+              'button',
+              { id: 'add', onClick: handleClick },
+              '+Add'
+            )
           ),
           _react2.default.createElement(
-            'button',
-            { id: 'save', onClick: handleClick },
-            'Save'
+            _reactRouterDom.Link,
+            { to: '/Package/work/saved', onClick: handleClick },
+            _react2.default.createElement(
+              'button',
+              { id: 'save' },
+              'Save'
+            )
           )
         )
       );
@@ -45621,6 +45653,60 @@ var Confirmed = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Confirmed;
+
+/***/ }),
+/* 363 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Saved = function (_React$Component) {
+  _inherits(Saved, _React$Component);
+
+  function Saved(props) {
+    _classCallCheck(this, Saved);
+
+    return _possibleConstructorReturn(this, (Saved.__proto__ || Object.getPrototypeOf(Saved)).call(this, props));
+  }
+
+  _createClass(Saved, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'box' },
+        _react2.default.createElement(
+          'h2',
+          null,
+          'Saved items'
+        )
+      );
+    }
+  }]);
+
+  return Saved;
+}(_react2.default.Component);
+
+exports.default = Saved;
 
 /***/ })
 /******/ ]);

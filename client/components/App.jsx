@@ -11,7 +11,7 @@ import Sports from './Sports'
 import Work from './Work'
 import Casual from './Casual'
 import Confirmed from './Confirmed'
-
+import Saved from './Saved'
 
 class App extends React.Component {
   constructor(props){
@@ -40,6 +40,9 @@ class App extends React.Component {
                   <Route exact path='/Package/casual' component={Casual} />
                   <Route exact path='/Package/work' component={Work} />
                   <Route exact path='/Contact/confirmed' component={Confirmed} />
+                  <Route exact path='/Package/casual/saved' component={Saved} />
+                  <Route exact path='/Package/sports/saved' component={Saved} />
+                  <Route exact path='/Package/work/saved' component={Saved} />
                 </div>
 
         </div>

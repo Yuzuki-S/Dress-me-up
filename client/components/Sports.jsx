@@ -1,9 +1,10 @@
 import React from 'react'
 import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
 import Box from './Box'
+import {Link} from 'react-router-dom'
 
 function handleClick(e) {
-  e.preventDefault();
+ 
   let elementArr = document.getElementsByClassName('active')
 
   let Arr = Array.prototype.slice.call(elementArr);
@@ -30,7 +31,8 @@ function Sports () {
         <div>
         <button id ="add"  onClick={handleClick}>+Add</button>
         </div>
-        <button id ="save"  onClick={handleClick}>Save</button>
+        <Link to= '/Package/work/saved' onClick={handleClick}>
+        <button id ="save">Save</button></Link>
       </div>
     </div>
   )
