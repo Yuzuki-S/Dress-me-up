@@ -133,6 +133,7 @@ color: black
 #x {
   min-height: 35px;
   min-width: 35px;
+color: rgba(0, 0, 0, 0.726);
 }
 
 #basic-nav-dropdown {
@@ -164,4 +165,14 @@ color: black
     max-width: 10%;
     max-height: 10%;
     margin: auto;
+  }
+
+  #save {
+    color: rgba(0, 0, 0, 0.726);
+  }
+
+
+  #add {
+    color: rgba(0, 0, 0, 0.726);
+    padding: 1%;
   }

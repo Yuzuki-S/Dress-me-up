@@ -45112,7 +45112,7 @@ var Signup = function (_React$Component) {
         { className: "box" },
         _react2.default.createElement(
           "div",
-          { className: "Login" },
+          { className: "Signup" },
           _react2.default.createElement(
             "h2",
             null,
@@ -45382,6 +45382,15 @@ function Sports() {
       _react2.default.createElement(_Box2.default, { src1: '/jersey.jpg', id1: 'jersey', src2: '/drawcord.jpg', id2: 'drawcord', src3: '/legging.jpg', id3: 'legging' }),
       _react2.default.createElement(_Box2.default, { src1: '/leon.jpg', id1: 'leon', src2: '/lola.jpg', id2: 'lola', src3: '/pink.jpg', id3: 'pink' }),
       _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'button',
+          { id: 'add', onClick: handleClick },
+          '+Add'
+        )
+      ),
+      _react2.default.createElement(
         'button',
         { id: 'save', onClick: handleClick },
         'Save'
@@ -45448,7 +45457,12 @@ function Work() {
       _react2.default.createElement(_Box2.default, { src1: '/adele.jpg', id1: 'adele', src2: '/kitten.jpg', id2: 'kitten', src3: '/loafer.jpg', id3: 'loafer' }),
       _react2.default.createElement(
         'button',
-        { onClick: handleClick },
+        { id: 'add', onClick: handleClick },
+        '+Add'
+      ),
+      _react2.default.createElement(
+        'button',
+        { id: 'save', onClick: handleClick },
         'Save'
       )
     )
@@ -45536,7 +45550,12 @@ var Casual = function (_React$Component) {
           _react2.default.createElement(_Box2.default, { src1: '/anya.jpg', id1: 'anya', src2: '/jusmin.jpg', id2: 'jusmin', src3: '/malia.jpg', id3: 'malia' }),
           _react2.default.createElement(
             'button',
-            { onClick: handleClick },
+            { id: 'add', onClick: handleClick },
+            '+Add'
+          ),
+          _react2.default.createElement(
+            'button',
+            { id: 'save', onClick: handleClick },
             'Save'
           )
         )

@@ -34,7 +34,8 @@ class Casual extends React.Component {
         <Box src1 = "/noir.jpg" id1 = "noir" src2= "/black.jpg" id2="black" src3="/woven.jpg" id3="woven"/> 
         <Box src1 = "/jeans.jpg" id1 = "jeans" src2= "/drawcord.jpg" id2="drawcord" src3="/white.jpg" id3="white"/>   
         <Box src1 = "/anya.jpg" id1 = "anya" src2= "/jusmin.jpg" id2="jusmin" src3="/malia.jpg" id3="malia"/>
-        <button onClick={handleClick}>Save</button>   
+        <button id ="add"  onClick={handleClick}>+Add</button>
+        <button id ="save" onClick={handleClick}>Save</button>   
       </div>
     </div>
 )

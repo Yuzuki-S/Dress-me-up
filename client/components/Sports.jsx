@@ -27,8 +27,10 @@ function Sports () {
         <Box src1 = "/linen.jpg" id1 = "linen" src2= "/crew.jpg" id2="crew" src3="/green.jpg" id3="green"/> 
         <Box src1 = "/jersey.jpg" id1 = "jersey" src2= "/drawcord.jpg" id2="drawcord" src3="/legging.jpg" id3="legging"/>   
         <Box src1 = "/leon.jpg" id1 = "leon" src2= "/lola.jpg" id2="lola" src3="/pink.jpg" id3="pink"/>
-
-        <button id="save" onClick={handleClick}>Save</button>
+        <div>
+        <button id ="add"  onClick={handleClick}>+Add</button>
+        </div>
+        <button id ="save"  onClick={handleClick}>Save</button>
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ class Signup extends React.Component {
  
   return (
     <div className='box'>
-            <div className="Login">
+            <div className="Signup">
             <h2>Sign Up </h2>
             <Form horizontal>
   <FormGroup controlId="formHorizontalEmail">
