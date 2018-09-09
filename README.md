@@ -21,7 +21,7 @@ This will help users to save time shopping and also keep their wardrobe up to da
 **User Story 3:** *As a user, I want to be able to contact the company.
   
    * [x] 1. Have a link to "Contact" in the navigation bar.
-   * [ ] 2. When users click "Contact", display a form to contact the company.
+   * [x] 2. When users click "Contact", display a form to contact the company.
 
 ## Stretch
 
