@@ -158,3 +158,10 @@ color: black
     margin: 20%;
   font-family: 'Permanent Marker', cursive;
   }
+
+  #login {
+    padding: 1% 0%;
+    max-width: 10%;
+    max-height: 10%;
+    margin: auto;
+  }
