@@ -142,3 +142,19 @@ color: black
 #buttonsMain {
   margin-left: 10px;
   }
+
+  #contactSubmit {
+    margin:5% 0% 0% 90%;
+
+  }
+
+.form-group {
+    margin: 2%;
+    padding: 2%;
+  }
+
+  #Thankyou {
+    font-size: 40px;
+    margin: 20%;
+  font-family: 'Permanent Marker', cursive;
+  }

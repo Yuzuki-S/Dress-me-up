@@ -10,6 +10,8 @@ import Package from './Package'
 import Sports from './Sports'
 import Work from './Work'
 import Casual from './Casual'
+import Confirmed from './Confirmed'
+
 
 class App extends React.Component {
   constructor(props){
@@ -30,14 +32,14 @@ class App extends React.Component {
                   <Route exact path='/' component={Home} />
                   <Route path='/About' component={About} />
                   <Route path='/Home' component={Home} />
-                  <Route path='/Contact' component={Contact} />
+                  <Route exact path='/Contact' component={Contact} />
                   <Route path='/Login' component={Login} />
                   <Route path='/Signup' component={Signup} />
                   <Route exact path='/Package' component={Package} />
                   <Route exact path='/Package/sports' component={Sports} />
-                  <Route exact path='/Package/casual' component={Casual} />
+                  <Route exact path='/Package/casual' component={Confirmed} />
                   <Route exact path='/Package/work' component={Work} />
-                  
+                  <Route exact path='/Contact/confirmed' component={Confirmed} />
                 </div>
 
         </div>
