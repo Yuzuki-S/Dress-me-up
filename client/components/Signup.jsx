@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, FormGroup, FormControl, ControlLabel, Form, Col, Checkbox } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 
 class Signup extends React.Component {
   constructor(props) {
@@ -44,12 +45,13 @@ class Signup extends React.Component {
     </Col>
   </FormGroup>
 
-
+  <Link to= '/Signup/signedup'>
   <FormGroup>
     <Col smOffset={2} sm={10}>
       <Button type="submit">Sign in</Button>
     </Col>
   </FormGroup>
+  </Link>
 </Form>
       </div>
      
