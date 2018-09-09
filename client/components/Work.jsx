@@ -3,7 +3,12 @@ import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
 import Box from './Box'
 import {Link} from 'react-router-dom'
 
+let savedItems = [];
+
 function handleClick(e) {
+  if(savedItems.length >0) {
+    savedItems = []
+  }
   let elementArr = document.getElementsByClassName('active')
 
   let Arr = Array.prototype.slice.call(elementArr);
@@ -14,8 +19,9 @@ function handleClick(e) {
 
   
   for(let i = 0; i < Arr.length; i++){
-    console.log(Arr[i].childNodes[0].id)
+    savedItems.push(Arr[i].childNodes[0].id)
   }
+
 }
 
 
@@ -31,8 +37,9 @@ function Work () {
         <div>
         <button id ="add"  onClick={handleClick}>+Add</button>
         </div>
-       <Link to= '/Package/work/saved' onClick={handleClick}>
-        <button id ="save"> Save</button></Link>
+        <Link to={{pathname: '/Package/work/saved', state: {savedValues: savedItems}}} onClick={handleClick}>
+          <button id ="save">Save</button>
+        </Link>
       </div>
     </div>
   )

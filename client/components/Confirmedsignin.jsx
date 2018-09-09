@@ -9,7 +9,7 @@ class Confirmedsignin extends React.Component {
   render() {
     return (
       <div className='box'>
-      <p id="Thankyou" >Thank you for signing in!</p>
+      <p id="Thankyou" >Thank you for signing up!</p>
       </div>
     )
   }

@@ -4,28 +4,38 @@ import Box from './Box'
 import {Link} from 'react-router-dom'
 
 
-function handleClick(e) {
-
-    let elementArr = document.getElementsByClassName('active')
-
-    let Arr = Array.prototype.slice.call(elementArr);
-
-    for (var i = 0; i < Arr.length; i++) {
-      Arr.splice(i , 1);
-    }
-    for(let i = 0; i < Arr.length; i++){
-      console.log(Arr[i].childNodes[0].id)
-    }
-}
-
+let savedItems = [];
 
 class Casual extends React.Component {
  constructor(props){
   super(props)
   this.state = {
-    isHidden: false
+    isHidden: false,
+    savedValues: []
   }
+
+  this.handleClick = this.handleClick.bind(this);
  }
+
+ handleClick(e) {
+  console.log("ADDING")
+  let items = []
+  let elementArr = document.getElementsByClassName('active')
+
+  let Arr = Array.prototype.slice.call(elementArr);
+
+  for (var i = 0; i < Arr.length; i++) {
+    Arr.splice(i , 1);
+  }
+  for(let i = 0; i < Arr.length; i++){
+    items.push(Arr[i].childNodes[0].id)
+  }
+  savedItems = items;
+  this.setState({
+    savedValues: savedItems
+  })
+}
+
  render () {
   return (
     <div>
@@ -36,10 +46,11 @@ class Casual extends React.Component {
         <Box src1 = "/jeans.jpg" id1 = "jeans" src2= "/drawcord.jpg" id2="drawcord" src3="/white.jpg" id3="white"/>   
         <Box src1 = "/anya.jpg" id1 = "anya" src2= "/jusmin.jpg" id2="jusmin" src3="/malia.jpg" id3="malia"/>
         <div>
-        <button id ="add"  onClick={handleClick}>+Add</button>
+        <button id ="add" onClick={this.handleClick}>+Add</button>
         </div>
-        <Link to= '/Package/work/saved' onClick={handleClick}>
-        <button id ="save">Save</button></Link>
+        <Link to={{pathname: '/Package/casual/saved', state: {savedValues: savedItems}}}>
+          <button id ="save">View</button>
+        </Link>
       </div>
     </div>
 )

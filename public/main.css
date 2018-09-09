@@ -160,6 +160,11 @@ color: rgba(0, 0, 0, 0.726);
   font-family: 'Permanent Marker', cursive;
   }
 
+  #ThankyouSaved {
+    font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+  }
+
   #login {
     padding: 1% 0%;
     max-width: 10%;
@@ -175,4 +180,10 @@ color: rgba(0, 0, 0, 0.726);
   #add {
     color: rgba(0, 0, 0, 0.726);
     padding: 1%;
+  }
+
+  #savedItems {
+    display: inline-block;
+   margin: 1%;
+  
   }

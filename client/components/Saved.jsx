@@ -6,18 +6,24 @@ class Saved extends React.Component {
     super(props)
   }
 
-  
 
 render () {
+  console.log(this.props.location.state.savedValues)
   return (
+   
     <div className= 'box'>
     <h2>Saved items</h2>
     <ul>
-      <li>
-        {console.log("Hi")}
-        {console.log(this.props)}
-      </li>
+    
+     { 
+       this.props.location.state.savedValues.map( item =>
+
+        <div id="savedItems"><img width={250} height={350} alt="360x425" id={item} src={"/" + item + ".jpg"} /></div>
+        
+      )
+     }
     </ul>
+    <p id="ThankyouSaved" >Thank you for your order </p>
     </div>
   )
 }
