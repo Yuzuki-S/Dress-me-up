@@ -1,14 +1,21 @@
 import React from 'react'
-import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
 import Box from './Box'
 import {Link} from 'react-router-dom'
 
 let savedItems = [];
 
-function handleClick(e) {
-  if(savedItems.length >0) {
-    savedItems = []
-  }
+class Sports extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      isHidden: false,
+      savedValues: []
+    }
+    this.handleClick = this.handleClick.bind(this);
+    }
+
+handleClick(e) {
+  let items = []
   let elementArr = document.getElementsByClassName('active')
 
   let Arr = Array.prototype.slice.call(elementArr);
@@ -21,9 +28,13 @@ function handleClick(e) {
   for(let i = 0; i < Arr.length; i++){
     savedItems.push(Arr[i].childNodes[0].id)
   }
+  savedItems =items;
+  this.setState({
+    savedValues: savedItems
+  })
 }
 
-function Sports () {
+render () {
   return (
     <div>
       <div className='box'>
@@ -33,14 +44,14 @@ function Sports () {
         <Box src1 = "/jersey.jpg" id1 = "jersey" src2= "/drawcord.jpg" id2="drawcord" src3="/legging.jpg" id3="legging"/>   
         <Box src1 = "/leon.jpg" id1 = "leon" src2= "/lola.jpg" id2="lola" src3="/pink.jpg" id3="pink"/>
         <div>
-        <button id ="add"  onClick={handleClick}>+Add</button>
+        <button id ="add"  onClick={this.handleClick}>+Add</button>
         </div>
-        <Link to={{pathname: '/Package/sports/saved', state: {savedValues: savedItems}}} onClick={handleClick}>
-          <button id ="save">Save</button>
+        <Link to={{pathname: '/Package/sports/saved', state: {savedValues: savedItems}}}>
+          <button id ="save">View</button>
         </Link>
       </div>
     </div>
   )
 }
-
+}
 export default Sports
