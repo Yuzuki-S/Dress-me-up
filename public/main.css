@@ -4,7 +4,7 @@ body {
 
 @media screen and (min-width: 480px) {
 body {
-      background-color: white;
+      background-color: black;
       height: 100%;
       width: 100%;
       background-image: url("home.jpg");
@@ -64,12 +64,13 @@ li {
   padding-bottom: 20px;
   border: 1px solid black;
   border-radius: 5px;
-  min-width: 1200px;
+  max-width: 1200px;
   padding-right: 20px;
   font-family: 'Permanent Marker', cursive;
   min-height: 800px;
-  margin: auto;
+  margin: auto; ;
 }
+
 
 p {
   font-family: 'Courier New', Courier, monospace;
@@ -174,12 +175,14 @@ color: rgba(0, 0, 0, 0.726);
 
   #save {
     color: rgba(0, 0, 0, 0.726);
+    margin: 1%;
   }
 
 
   #add {
     color: rgba(0, 0, 0, 0.726);
     padding: 1%;
+    margin: 1%;
   }
 
   #savedItems {
@@ -187,3 +190,33 @@ color: rgba(0, 0, 0, 0.726);
    margin: 1%;
   
   }
+
+
+  @media only screen and (max-width: 600px) {
+    #add {
+      margin-top: 2%;
+      margin-left: 35%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  #save {
+    margin-left: 35%
+  }
+}
+
+
+
+/* @media only screen and (min-width: 1750px) {
+  #add {
+    margin-top: 20%;
+    margin-left: 35%
+    
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+#save {
+  margin-left: 35%
+}
+} */

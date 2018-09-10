@@ -26,7 +26,7 @@ handleClick(e) {
   
   
   for(let i = 0; i < Arr.length; i++){
-    savedItems.push(Arr[i].childNodes[0].id)
+    items.push(Arr[i].childNodes[0].id)
   }
   savedItems =items;
   this.setState({
