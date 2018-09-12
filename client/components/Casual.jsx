@@ -1,5 +1,5 @@
 import React from 'react'
-import {Carousel, ButtonToolbar,OverlayTrigger, Popover} from 'react-bootstrap'
+
 import Box from './Box'
 import {Link} from 'react-router-dom'
 
