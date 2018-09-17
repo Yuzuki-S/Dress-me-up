@@ -36,6 +36,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "knex": "^0.15.2",
-    "react-bootstrap": "^0.32.3"
+    "react-bootstrap": "^0.32.3",
+    "sqlite3": "^4.0.2"
   }
 }

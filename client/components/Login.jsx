@@ -9,6 +9,24 @@ class Login extends React.Component {
       email: "",
       password: ""
     }
+    this.handleSubmit = this.handleSubmit.bind(this)
+
+  }
+
+  handleSubmit() {
+  console.log('clicked')
+  let thisUser = document.getElementById("email").value
+  let thisPassword = document.getElementById("password").value
+    
+  request.post('/register')
+  .send({ email: thisUser, password: thisPassword })
+  .then(() => {
+   console.log('send')  
+   
+   })
+   .catch((err) => {
+    console.log('error', err)
+   })
   }
 
   render() {
@@ -18,13 +36,13 @@ class Login extends React.Component {
     <div className='box'>
             <div className="Login">
             <h2>Log in </h2>
-            <Form horizontal>
-  <FormGroup controlId="formHorizontalEmail">
+  <form horizontal  onSubmit={this.handleSubmit()}>
+  <FormGroup controlId="formHorizontalEmail" >
     <Col componentClass={ControlLabel} sm={2}>
       Email
     </Col>
     <Col sm={10}>
-      <FormControl type="email" placeholder="Email" />
+      <FormControl componentClass= "input" id ="email" name ="email" type="email" placeholder="Email"/>
     </Col>
   </FormGroup>
 
@@ -33,7 +51,7 @@ class Login extends React.Component {
       Password
     </Col>
     <Col sm={10}>
-      <FormControl type="password" placeholder="Password" />
+      <FormControl componentClass= "input"  id="password" name ="password" type="password" placeholder="Password"/>
     </Col>
   </FormGroup>
 
@@ -46,11 +64,16 @@ class Login extends React.Component {
 
   <FormGroup>
     <Col smOffset={2} sm={10}>
-         <Button type="submit">Log in</Button>
+         <Button type="submit" value="submit"> Log in</Button>
+    </Col>
+  </FormGroup>
+  <FormGroup>
+    <Col smOffset={2} sm={10}>
+         <Button type="submit">Log out</Button>
     </Col>
   </FormGroup>
   </Link>
-</Form>
+</form>
       </div>
      
     </div>
