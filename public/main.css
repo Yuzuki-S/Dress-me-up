@@ -1,22 +1,27 @@
 body {
-  background-color: pink;
+  background-color: rgba(0, 0, 0, 0.938) !important;
 }
 
 @media screen and (min-width: 480px) {
 body {
-      background-color: white;
       height: 100%;
       width: 100%;
-      background-image: url("home.jpg");
-      background-position-y: -8px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: aliceblue;
+      color: rgb(0, 0, 0);
       margin: 0 !important;
       padding: 0 !important;
 
   }
 }
+
+
+#myVideo {
+
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 .container {
   display: flex;
   padding: 0%;
@@ -34,8 +39,7 @@ body {
   color: aliceblue;
   font-family: 'Permanent Marker', cursive;
   text-shadow: 2px 2px 5px black;
-  margin-top: 20%;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-bottom: 0%;
 }
 
