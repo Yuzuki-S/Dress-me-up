@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashRouter as Router, Route} from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 import Home from './Home'
 import Navy from './Navy'
 import About from './About'
@@ -17,7 +17,7 @@ import Confirmedsignin from './Confirmedsignin'
 
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
   }
 
@@ -28,27 +28,27 @@ class App extends React.Component {
     return (
       <Router>
         <div id='app'>
-        <Route path='/' component={Navy} />
+          <Route path='/' component={Navy} />
+          <Route path='/Home' component={Home} />
 
+          <div id="bodyThing" className='col-lg-8'>
+            <Route exact path='/' component={Home} />
+            <Route path='/About' component={About} />
 
-                <div id="bodyThing"className='col-lg-8'>
-                  <Route exact path='/' component={Home} />
-                  <Route path='/About' component={About} />
-                  <Route path='/Home' component={Home} />
-                  <Route exact path='/Contact' component={Contact} />
-                  <Route exact path='/Login' component={Login} />
-                  <Route exact path='/Signup' component={Signup} />
-                  <Route exact path='/Package' component={Package} />
-                  <Route exact path='/Package/sports' component={Sports} />
-                  <Route exact path='/Package/casual' component={Casual} />
-                  <Route exact path='/Package/work' component={Work} />
-                  <Route exact path='/Contact/confirmed' component={Confirmed} />
-                  <Route exact path='/Package/casual/saved' component={Saved} />
-                  <Route exact path='/Package/sports/saved' component={Saved} />
-                  <Route exact path='/Package/work/saved' component={Saved} />
-                  <Route exact path='/Login/loggedin' component={Confirmedlogin} />
-                  <Route exact path='/Signup/signedup' component={Confirmedsignin} />
-                </div>
+            <Route exact path='/Contact' component={Contact} />
+            <Route exact path='/Login' component={Login} />
+            <Route exact path='/Signup' component={Signup} />
+            <Route exact path='/Package' component={Package} />
+            <Route exact path='/Package/sports' component={Sports} />
+            <Route exact path='/Package/casual' component={Casual} />
+            <Route exact path='/Package/work' component={Work} />
+            <Route exact path='/Contact/confirmed' component={Confirmed} />
+            <Route exact path='/Package/casual/saved' component={Saved} />
+            <Route exact path='/Package/sports/saved' component={Saved} />
+            <Route exact path='/Package/work/saved' component={Saved} />
+            <Route exact path='/Login/loggedin' component={Confirmedlogin} />
+            <Route exact path='/Signup/signedup' component={Confirmedsignin} />
+          </div>
 
         </div>
       </Router>

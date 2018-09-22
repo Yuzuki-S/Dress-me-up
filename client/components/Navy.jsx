@@ -7,7 +7,7 @@ import {Navbar, NavDropdown, Nav, NavItem,MenuItem,  } from 'react-bootstrap'
 const Navy = () => {
   return (
 
-      <Navbar >
+      <Navbar inverse>
         <Nav>
         <Navbar.Header>
           <Navbar.Brand>

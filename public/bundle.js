@@ -27997,12 +27997,12 @@ var App = function (_React$Component) {
           'div',
           { id: 'app' },
           _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Navy2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/Home', component: _Home2.default }),
           _react2.default.createElement(
             'div',
             { id: 'bodyThing', className: 'col-lg-8' },
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/About', component: _About2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/Home', component: _Home2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Contact', component: _Contact2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Login', component: _Login2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/Signup', component: _Signup2.default }),
@@ -31697,7 +31697,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Home = function Home() {
   return _react2.default.createElement(
     'div',
-    null,
+    { id: 'home_page' },
     _react2.default.createElement(
       'video',
       { autoPlay: true, muted: true, loop: true, id: 'myVideo' },
@@ -31705,41 +31705,32 @@ var Home = function Home() {
       'Your browser does not support HTML5 video.'
     ),
     _react2.default.createElement(
-      'div',
-      { className: 'container' },
+      'h1',
+      { className: 'cover-heading' },
+      'Dress Me Up'
+    ),
+    _react2.default.createElement(
+      _reactBootstrap.ButtonToolbar,
+      null,
       _react2.default.createElement(
-        'h1',
-        { className: 'cover-heading' },
-        'Dress Me Up'
+        _reactRouterDom.Link,
+        { id: 'list', to: '/About' },
+        _react2.default.createElement(
+          _reactBootstrap.Button,
+          { id: 'button', bsStyle: 'primary', bsSize: 'large' },
+          'Learn more'
+        )
       ),
       _react2.default.createElement(
-        'div',
-        { id: 'buttonsMain' },
+        _reactRouterDom.Link,
+        { id: 'list', to: '/Package' },
         _react2.default.createElement(
-          _reactBootstrap.ButtonToolbar,
-          null,
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { id: 'list', to: '/About' },
-            _react2.default.createElement(
-              _reactBootstrap.Button,
-              { id: 'button', bsStyle: 'primary', bsSize: 'large' },
-              'Learn more'
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { id: 'list', to: '/Package' },
-            _react2.default.createElement(
-              _reactBootstrap.Button,
-              { id: 'button2', bsStyle: 'primary', bsSize: 'large' },
-              'Order now'
-            )
-          )
+          _reactBootstrap.Button,
+          { id: 'button2', bsStyle: 'primary', bsSize: 'large' },
+          'Order now'
         )
       )
-    ),
-    '  '
+    )
   );
 };
 
@@ -44643,7 +44634,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Navy = function Navy() {
   return _react2.default.createElement(
     _reactBootstrap.Navbar,
-    null,
+    { inverse: true },
     _react2.default.createElement(
       _reactBootstrap.Nav,
       null,
