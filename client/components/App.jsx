@@ -29,12 +29,10 @@ class App extends React.Component {
       <Router>
         <div id='app'>
           <Route path='/' component={Navy} />
-          <Route path='/Home' component={Home} />
-
+          <Route exact path='/' component={Home} /> 
+          <Route exact path='/Home' component={Home} /> 
           <div id="bodyThing" className='col-lg-8'>
-            <Route exact path='/' component={Home} />
             <Route path='/About' component={About} />
-
             <Route exact path='/Contact' component={Contact} />
             <Route exact path='/Login' component={Login} />
             <Route exact path='/Signup' component={Signup} />

@@ -1,5 +1,6 @@
 html {
   max-height: 100%;
+  overflow: hidden;
 }
 body {
   background-color: rgba(0, 0, 0, 0.938) !important;
@@ -21,11 +22,9 @@ body {
 }
 
 #myVideo {
-  right: 0;
   margin-left: 0;
   bottom: 0;
-  min-width: 100%; 
-  max-height: 1100px;
+  height: 100%;
   opacity: 0.7;
 }
 
@@ -49,12 +48,13 @@ body {
   margin-left: 10%;
   margin-bottom: 0%;
   position: relative;
-  top: -850px;
+  top: -500px;
 }
 
 #home_page {
-  height: 1000px;
+  height: 1100px;
 }
+
 #button {
 margin-left: 25%;
 margin-right: 2%;
@@ -69,7 +69,7 @@ top: -820px; */
 
 .btn-toolbar {
  position: relative;
-  top: -820px;
+  top: -470px;
 }
 li {
   color: aliceblue;
